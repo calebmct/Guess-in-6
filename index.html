@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>guess in 6</title>
+        <script type="text/javascript">
+          function newSecretWord() {
+            var secretWord = "CLAIM";
+            return secretWord;
+          }
+          //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
+$(".guess").on("keydown",function(event) {
+	var arr = [8];
+	for(var i = 65; i <= 90; i++){
+    arr.push(i);
+  }
+  if(jQuery.inArray(event.which, arr) === -1){
+    event.preventDefault();
+  }
+});
+
+//Only allow letters to be pasted
+$(".guess").on("input", function(){
+  var regexp = /[^a-zA-Z]/g;
+  if($(this).val().match(regexp)){
+    $(this).val( $(this).val().replace(regexp,'') );
+  }
+});
+var correctHex = "green";
+var firstGuess = false;
+var secondGuess = false;
+var thirdGuess = false;
+var fourthGuess = false;
+var fifthGuess = false;
+var sixthGuess = false;
+
+$("#A").keyup(function () {
+	var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+	$("#A1").val(uno);
+  $("#A2").val(dos);
+  $("#A3").val(tres);
+  $("#A4").val(cuatro);
+  $("#A5").val(cinco);
+  $("testValidate").val(firstGuess);
+});
+
+$("#validateGuessA").click(function() {
+	var validateA1 = $("#A1").val().charAt(0);
+  var validateA2 = $("#A2").val().charAt(1);
+  var validateA3 = $("#A3").val().charAt(2);
+  var validateA4 = $("#A4").val().charAt(3);
+  var validateA5 = $("#A5").val().charAt(4);
+  var validateSw1 = newSecretWord().charAt(0);
+  var validateSw2 = newSecretWord().charAt(1);
+  var validateSw3 = newSecretWord().charAt(2);
+  var validateSw4 = newSecretWord().charAt(3);
+  var validateSw5 = newSecretWord().charAt(4);
+  this.disabled = true;
+  $("#A").prop('disabled',true);
+  $("#testValidate").val(validateSw1+validateA1);
+  if (validateA1 == validateSw1){
+		$("A1").css("background-color",correctHex)
+    }
+});
+        </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+h1 {
+	font-family: 'DM Serif Display', serif;
+	font-size: 4rem;
+	font-weight: 400;
+	color: black;
+}
+body, input {
+	font-family: 'Istok Web', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+}
+#secretword {
+  text-align: center;
+}
+.guesses {
+  text-align: center;
+}
+.guesses input {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  background-color: #efefef;
+  margin: 0 3px 0 3px;
+  text-align: center;
+  font-size: 3rem;
+  caret-color: transparent;
+}
+</style>
+		</head>
+	<body>
+		<div id="secretword">
+    <h1>
+      <script type="text/javascript">
+          document.write(newSecretWord());
+      </script>
+    </h1>
+		</div>
+    <div>
+      <input class="guess" id="A" type="text" maxlength="5" pattern="[a-zA-Z]"/>
+    </div>
+    <div class="guesses">
+      <input id="A1" class="letters" type="text" maxlength="1"/>
+      <input id="A2" class="letters" type="text" maxlength="1"/>
+      <input id="A3" class="letters" type="text" maxlength="1"/>
+      <input id="A4" class="letters" type="text" maxlength="1"/>
+      <input id="A5" class="letters" type="text" maxlength="1"/>
+      <button type="submit" id="validateGuessA" onkeypress="validateA()">CHECK</button>
+    </div>
+    <div>
+      <input id="testValidate" type="text"/>
+    </div>
+	</body>
+</html>
