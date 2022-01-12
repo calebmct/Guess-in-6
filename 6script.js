@@ -1,3 +1,7 @@
+function newSecretWord() {
+    var secretWord = "CLAIM";
+    return secretWord;
+  }
 //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
 $(".guess").on("keydown",function(event) {
 	var arr = [8];
