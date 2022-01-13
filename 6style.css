@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --ltgrey: #d0d0d0;
+  --red: #bf7373;
+  --green: #a0e73a;
+  --yellow: #ffdb4b;
+}
 h1 {
 	font-family: 'DM Serif Display', serif;
 	font-size: 4rem;
@@ -21,7 +27,7 @@ body, input {
   height: 4rem;
   width: 4rem;
   border: none;
-  background-color: #efefef;
+  background-color: var(--ltgrey);
   margin: 0 3px 0 3px;
   text-align: center;
   font-size: 3rem;

@@ -4,10 +4,21 @@ function newSecretWord() {
   }
   
   function reset() {
-    $("input").val("");
+      $("input").val("");
     $("input").prop('disabled', false);
     $("button").prop('disabled', false);
+    $(".letters").css("background-color","var(--ltgrey)");
   }
+  
+  var input = document.getElementById("A");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("validateGuessA").click();
+    }
+  });
+  
+  //JQuery ready functions
   $(document).ready(function() {
   
       document.getElementById("secretword").innerHTML = newSecretWord();
@@ -68,9 +79,39 @@ function newSecretWord() {
     var validateSw5 = sw.charAt(4);
       
     if (validateA1 === validateSw1) {
-      document.getElementById("testValidate").innerHTML = "True";
+          $("#A1").css("background-color","var(--green)");
+      } else if (sw.includes(validateA1)) {
+        $("#A1").css("background-color","var(--yellow)");
       } else {
-      document.getElementById("testValidate").innerHTML = "FALSE";
+        $("#A1").css("background-color","var(--red)");
       }
-    });
+      if (validateA2 === validateSw2) {
+          $("#A2").css("background-color","var(--green)");
+      } else if (sw.includes(validateA2)) {
+        $("#A2").css("background-color","var(--yellow)");
+      } else {
+        $("#A2").css("background-color","var(--red)");
+      }
+      if (validateA3 === validateSw3) {
+          $("#A3").css("background-color","var(--green)");
+      } else if (sw.includes(validateA3)) {
+        $("#A3").css("background-color","var(--yellow)");
+      } else {
+        $("#A3").css("background-color","var(--red)");
+      }
+      if (validateA4 === validateSw4) {
+          $("#A4").css("background-color","var(--green)");
+      } else if (sw.includes(validateA4)) {
+        $("#A4").css("background-color","var(--yellow)");
+      } else {
+        $("#A4").css("background-color","var(--red)");
+      }
+      if (validateA5 === validateSw5) {
+          $("#A5").css("background-color","var(--green)");
+      } else if (sw.includes(validateA5)) {
+        $("#A5").css("background-color","var(--yellow)");
+      } else {
+        $("#A5").css("background-color","var(--red)");
+      }
+      });
   });
