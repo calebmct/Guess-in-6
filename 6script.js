@@ -10,20 +10,6 @@ function newSecretWord() {
     $(".letters").css("background-color","var(--ltgrey)");
   }
   
-  var input = document.getElementById("A");
-  input.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-     event.preventDefault();
-     document.getElementById("validateGuessA").click();
-    }
-  });
-  var input = document.getElementById("B");
-  input.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-     event.preventDefault();
-     document.getElementById("validateGuessB").click();
-    }
-  });
   
   //JQuery ready functions
   $(document).ready(function() {
@@ -49,6 +35,19 @@ function newSecretWord() {
       }
     });
   
+    $("#A").on("keydown", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("validateGuessA").click();
+    }
+  });
+  $("#B").on("keydown", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("validateGuessB").click();
+    }
+  });
+
     var firstGuess = false;
     var secondGuess = false;
     var thirdGuess = false;
