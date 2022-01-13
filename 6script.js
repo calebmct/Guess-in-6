@@ -52,17 +52,18 @@ $(document).ready(function(){
     $("#A").prop('disabled',true);
     });
 });
-
-function validateA() {
-    var validateA1 = document.getElementById("#A1").value.charAt(0);
-    var validateA2 = document.getElementById("#A2").value.charAt(1);
-    var validateA3 = document.getElementById("#A3").value.charAt(2);
-    var validateA4 = document.getElementById("#A4").value.charAt(3);
-    var validateA5 = document.getElementById("#A5").value.charAt(4);
-    var validateSw1 = newSecretWord().value.charAt(0);
-    var validateSw2 = newSecretWord().value.charAt(1);
-    var validateSw3 = newSecretWord().value.charAt(2);
-    var validateSw4 = newSecretWord().value.charAt(3);
-    var validateSw5 = newSecretWord().value.charAt(4);
-    document.getElementById("testValidate").innerHTML = "TRUTH";
-  }
+$(document).ready(function(){
+    function validateA() {
+        var validateA1 = document.getElementById("#A1").value.charAt(0);
+        var validateA2 = document.getElementById("#A2").value.charAt(1);
+        var validateA3 = document.getElementById("#A3").value.charAt(2);
+        var validateA4 = document.getElementById("#A4").value.charAt(3);
+        var validateA5 = document.getElementById("#A5").value.charAt(4);
+        var validateSw1 = newSecretWord().value.charAt(0);
+        var validateSw2 = newSecretWord().value.charAt(1);
+        var validateSw3 = newSecretWord().value.charAt(2);
+        var validateSw4 = newSecretWord().value.charAt(3);
+        var validateSw5 = newSecretWord().value.charAt(4);
+        $("#testValidate").val("TRUTH");
+    }
+});
