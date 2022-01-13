@@ -55,7 +55,7 @@ function newSecretWord() {
     var validateA3 = $("#A3").val().charAt(2);
     var validateA4 = $("#A4").val().charAt(3);
     var validateA5 = $("#A5").val().charAt(4);
-    var sw = $("newSecretWord()");
+    var sw = newSecretWord();
     var validateSw1 = sw.charAt(0);
     var validateSw2 = sw.charAt(1);
     var validateSw3 = sw.charAt(2);
