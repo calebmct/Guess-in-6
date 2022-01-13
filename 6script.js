@@ -2,6 +2,12 @@ function newSecretWord() {
     var secretWord = "CLAIM";
     return secretWord;
   }
+  
+  function reset() {
+    $("input").val("");
+    $("input").prop('disabled', false);
+    $("button").prop('disabled', false);
+  }
   $(document).ready(function() {
   
       document.getElementById("secretword").innerHTML = newSecretWord();
@@ -48,21 +54,23 @@ function newSecretWord() {
     $("#validateGuessA").click(function() {
       this.disabled = true;
       $("#A").prop('disabled', true);
-    });
   
-    var validateA1 = $("#A1").val().charAt(0);
-    var validateA2 = $("#A2").val().charAt(1);
-    var validateA3 = $("#A3").val().charAt(2);
-    var validateA4 = $("#A4").val().charAt(3);
-    var validateA5 = $("#A5").val().charAt(4);
+      var validateA1 = $("#A1").val();
+    var validateA2 = $("#A2").val();
+    var validateA3 = $("#A3").val();
+    var validateA4 = $("#A4").val();
+    var validateA5 = $("#A5").val();
     var sw = newSecretWord();
     var validateSw1 = sw.charAt(0);
     var validateSw2 = sw.charAt(1);
     var validateSw3 = sw.charAt(2);
     var validateSw4 = sw.charAt(3);
     var validateSw5 = sw.charAt(4);
-    $("#validateGuessA").click(function() {
-      document.getElementById("testValidate").innerHTML = "TRUTH";
+      
+    if (validateA1 === validateSw1) {
+      document.getElementById("testValidate").innerHTML = "True";
+      } else {
+      document.getElementById("testValidate").innerHTML = "FALSE";
+      }
     });
   });
-  
