@@ -33,3 +33,10 @@ body, input {
   font-size: 3rem;
   caret-color: transparent;
 }
+.guess {
+  caret-color: transparent;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  color: transparent;
+}
