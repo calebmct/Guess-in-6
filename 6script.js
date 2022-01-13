@@ -64,6 +64,8 @@ $(document).ready(function(){
         var validateSw3 = newSecretWord().value.charAt(2);
         var validateSw4 = newSecretWord().value.charAt(3);
         var validateSw5 = newSecretWord().value.charAt(4);
-        $("#testValidate").val("TRUTH");
-    }
+        $("#testValidate").click(function(){
+            $(this).val("TRUTH");
+        });
+    };
 });
