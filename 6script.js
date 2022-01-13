@@ -53,7 +53,6 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    function validateA() {
         var validateA1 = document.getElementById("#A1").value.charAt(0);
         var validateA2 = document.getElementById("#A2").value.charAt(1);
         var validateA3 = document.getElementById("#A3").value.charAt(2);
@@ -65,7 +64,6 @@ $(document).ready(function(){
         var validateSw4 = newSecretWord().value.charAt(3);
         var validateSw5 = newSecretWord().value.charAt(4);
         $("#validateGuessA").click(function(){
-            $(#testValidate).val("TRUTH");
+            $("#testValidate").val("TRUTH");
         });
-    }
 });
