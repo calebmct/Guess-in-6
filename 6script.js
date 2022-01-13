@@ -3,14 +3,16 @@ function newSecretWord() {
     return secretWord;
   }
 //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
-$(".guess").on("keydown",function(event) {
-	var arr = [8];
-	for(var i = 65; i <= 90; i++){
-    arr.push(i);
-  }
-  if(jQuery.inArray(event.which, arr) === -1){
-    event.preventDefault();
-  }
+$(function(){
+    $(".guess").on("keydown",function(event) {
+        var arr = [8];
+        for(var i = 65; i <= 90; i++){
+        arr.push(i);
+    }
+    if(jQuery.inArray(event.which, arr) === -1){
+        event.preventDefault();
+    }
+    });
 });
 
 //Only allow letters to be pasted
