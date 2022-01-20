@@ -1,288 +1,475 @@
+/*eslint max-statements: ["error", 10, { "ignoreTopLevelFunctions": true }]*/
 function newSecretWord() {
-  var secretWord = "CLAIM";
+  var secretWord = "CLAMM";
   return secretWord;
 }
 
 function reset() {
   $("input").val("");
-  $("input").prop('disabled', false);
-  $("button").prop('disabled', false);
+  $("input").prop('disabled', true);
+  $("#A").prop('disabled', false);
+  $("button").prop('disabled', true);
+  $("#validateGuessA").prop('disabled', false);
   $(".letters").css("background-color", "var(--ltgrey)");
+  newSecretWord();
 }
 
 //JQuery ready functions
 $(document).ready(function() {
 
-      $("#A").focus();
+  $("#A").focus();
 
-      document.getElementById("secretword").innerHTML = newSecretWord();
+  document.getElementById("secretword").innerHTML = newSecretWord();
 
-      $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
-        $(this).selectionStart = $(".guess").selectionEnd;
-      }, false);
+  $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
+    $(this).selectionStart = $(".guess").selectionEnd;
+  }, false);
 
-      $(".guess").on("blur", function() {
-        var blurInput = $(this);
-        setTimeout(function() {
-          blurInput.focus()
-        }, 10);
-      });
+  /*$(".guess").on("blur", function() {
+    var blurInput = $(this);
+    setTimeout(function() {
+      blurInput.focus()
+    }, 10);*/
+});
 
-      //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
-      $(".guess").on("keydown", function(event) {
-        var arr = [8];
-        for (var i = 65; i <= 90; i++) {
-          arr.push(i);
-        }
-        if (jQuery.inArray(event.which, arr) === -1) {
-          event.preventDefault();
-        }
-      });
+//Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
+$(".guess").on("keydown", function(event) {
+  var arr = [8];
+  for (var i = 65; i <= 90; i++) {
+    arr.push(i);
+  }
+  if (jQuery.inArray(event.which, arr) === -1) {
+    event.preventDefault();
+  }
+});
 
-      //Only allow letters to be pasted
-      $(".guess").on("input", function() {
-        var regexp = /[^a-zA-Z]/g;
-        if ($(this).val().match(regexp)) {
-          $(this).val($(this).val().replace(regexp, ''));
-        }
-      });
+//Only allow letters to be pasted
+$(".guess").on("input", function() {
+  var regexp = /[^a-zA-Z]/g;
+  if ($(this).val().match(regexp)) {
+    $(this).val($(this).val().replace(regexp, ''));
+  }
+});
 
-      //"Enter" submits answer
-      $("#A").on("keydown", function(event) {
-        if (event.keyCode === 13 && $(this).val().length == 5) {
-          event.preventDefault();
-          document.getElementById("validateGuessA").click();
-        }
-      });
-      $("#B").on("keydown", function(event) {
-        if (event.keyCode === 13 && $(this).val().length == 5) {
-          event.preventDefault();
-          document.getElementById("validateGuessB").click();
-        }
-      });
+// GLOBAL VARS
 
-      var firstGuess = false;
-      var secondGuess = false;
-      var thirdGuess = false;
-      var fourthGuess = false;
-      var fifthGuess = false;
-      var sixthGuess = false;
+var sw = newSecretWord();
+var swL = newSecretWord();
+var guess;
+var lOne;
+var lTwo;
+var lThree;
+var lFour;
+var lFive;
+var lastGuess;
+var valButton;
+var nextGuess;
+var AAA;
+var AAB;
+var AAC;
+var AAD;
+var AAE;
+var ABE;
+var ACE;
+var ADE;
+var AEE;
+var AFE;
+var swVal1;
+var swVal2;
+var swVal3;
+var swVal4;
+var swVal5;
+var guessClass;
+
+
+//"Enter" submits answer
+$("#A").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessA").click();
+  }
+});
+$("#B").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessB").click();
+  }
+});
+$("#C").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessC").click();
+  }
+});
+$("#D").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessD").click();
+  }
+});
+$("#E").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessE").click();
+  }
+});
+$("#F").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessF").click();
+  }
+});
 
 //Inputs typed letters into corresponding inputs displayed
-      $("#A").keyup(function() {
-        var uno = $(this).val().charAt(0).toUpperCase();
-        var dos = $(this).val().charAt(1).toUpperCase();
-        var tres = $(this).val().charAt(2).toUpperCase();
-        var cuatro = $(this).val().charAt(3).toUpperCase();
-        var cinco = $(this).val().charAt(4).toUpperCase();
-        $("#A1").val(uno);
-        $("#A2").val(dos);
-        $("#A3").val(tres);
-        $("#A4").val(cuatro);
-        $("#A5").val(cinco);
-      });
+$("#A").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#A1").val(uno);
+  $("#A2").val(dos);
+  $("#A3").val(tres);
+  $("#A4").val(cuatro);
+  $("#A5").val(cinco);
+});
 
-      $("#B").keyup(function() {
-        var uno = $(this).val().charAt(0).toUpperCase();
-        var dos = $(this).val().charAt(1).toUpperCase();
-        var tres = $(this).val().charAt(2).toUpperCase();
-        var cuatro = $(this).val().charAt(3).toUpperCase();
-        var cinco = $(this).val().charAt(4).toUpperCase();
-        $("#B1").val(uno);
-        $("#B2").val(dos);
-        $("#B3").val(tres);
-        $("#B4").val(cuatro);
-        $("#B5").val(cinco);
-      });
+$("#B").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#B1").val(uno);
+  $("#B2").val(dos);
+  $("#B3").val(tres);
+  $("#B4").val(cuatro);
+  $("#B5").val(cinco);
+});
+
+$("#C").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#C1").val(uno);
+  $("#C2").val(dos);
+  $("#C3").val(tres);
+  $("#C4").val(cuatro);
+  $("#C5").val(cinco);
+});
+
+$("#D").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#D1").val(uno);
+  $("#D2").val(dos);
+  $("#D3").val(tres);
+  $("#D4").val(cuatro);
+  $("#D5").val(cinco);
+});
+
+$("#E").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#E1").val(uno);
+  $("#E2").val(dos);
+  $("#E3").val(tres);
+  $("#E4").val(cuatro);
+  $("#E5").val(cinco);
+});
+
+$("#F").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#F1").val(uno);
+  $("#F2").val(dos);
+  $("#F3").val(tres);
+  $("#F4").val(cuatro);
+  $("#F5").val(cinco);
+});
 
 //Validation when submitting answers
-      $("#validateGuessA").click(function() {
-          if ($("#A").val().length != 5) {
-            return false;
-          } else {
-            this.disabled = true;
-            $("#B").prop('disabled', false);
-            $("#A").prop('disabled', true);
-            $("#B").focus();
 
-            var validateA1 = $("#A1").val();
-            var validateA2 = $("#A2").val();
-            var validateA3 = $("#A3").val();
-            var validateA4 = $("#A4").val();
-            var validateA5 = $("#A5").val();
-            var sw = newSecretWord();
-            var swL = newSecretWord();
-            var validateSw1 = sw.charAt(0);
-            var validateSw2 = sw.charAt(1);
-            var validateSw3 = sw.charAt(2);
-            var validateSw4 = sw.charAt(3);
-            var validateSw5 = sw.charAt(4);
+$("#validateGuessA").click(function() {
+  if ($("#A").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
 
-            if (validateA1 === validateSw1) {
-              var a1GCheck = true;
-            } else {
-              var a1GCheck = false;
-            }
-            if (validateA2 === validateSw2) {
-              var a2GCheck = true;
-            } else {
-              var a2GCheck = false;
-            }
-            if (validateA3 === validateSw3) {
-              var a3GCheck = true;
-            } else {
-              var a3GCheck = false;
-            }
-            if (validateA4 === validateSw4) {
-              var a4GCheck = true;
-            } else {
-              var a4GCheck = false;
-            }
-            if (validateA5 === validateSw5) {
-              var a5GCheck = true;
-            } else {
-              var a5GCheck = false;
-            }
-            
-            if (a1GCheck === true) {
-	            var AAA = swL.replace(swL.charAt(0),"_");
-              $("#A1").css("background-color", "var(--green)");
-            } else {
-            	var AAA = swL;
-            }
-            if (a2GCheck === true) {
-	            var AAB = AAA.replace(AAA.charAt(1),"_");
-              $("#A2").css("background-color", "var(--green)");
-            } else {
-            	var AAB = AAA;
-            }
-            if (a3GCheck === true) {
-	            var AAC = AAB.replace(AAB.charAt(2),"_");
-              $("#A3").css("background-color", "var(--green)");
-            } else {
-            	var AAC = AAB;
-            }
-            if (a4GCheck === true) {
-	            var AAD = AAC.replace(AAC.charAt(3),"_");
-              $("#A4").css("background-color", "var(--green)");
-            } else {
-            	var AAD = AAC;
-            }
-            if (a5GCheck === true) {
-	            var AAE = AAD.replace(AAD.charAt(4),"_");
-              $("#A5").css("background-color", "var(--green)");
-            } else {
-            	var AAE = AAD;
-            }
-						
-            document.getElementById("testValidate").innerHTML = AAE;
-            
-            if (AAE.includes(validateA1)) {
-            	$("#A1").css("background-color","var(--yellow)");
-              let indexed = AAE.indexOf(validateA1);
-              var ABE = AAE.replace(AAE.charAt(indexed),"_");
-            } else if (AAE.charAt(0) != "_") {
-            	$("#A1").css("background-color","var(--dkgrey)");
-              var ABE = AAE;
-            } else {
-              var ABE = AAE;
-            }
-            if (ABE.includes(validateA2)) {
-            	$("#A2").css("background-color","var(--yellow)");
-              let indexed = ABE.indexOf(validateA2);
-              var ACE = ABE.replace(ABE.charAt(indexed),"_");
-            } else if (ABE.charAt(1) != "_") {
-            	$("#A2").css("background-color","var(--dkgrey)");
-              var ACE = ABE;
-            } else {
-            	var ACE = ABE;
-            }
-            if (ACE.includes(validateA3)) {
-            	$("#A3").css("background-color","var(--yellow)");
-              let indexed = ACE.indexOf(validateA3);
-              var ADE = ACE.replace(ACE.charAt(indexed),"_");
-            } else if (ACE.charAt(2) != "_") {
-            	$("#A3").css("background-color","var(--dkgrey)");
-              var ADE = ACE;
-            } else {
-            	var ADE = ACE;
-            }
-            if (ADE.includes(validateA4)) {
-            	$("#A4").css("background-color","var(--yellow)");
-              let indexed = ADE.indexOf(validateA4);
-              var AEE = ADE.replace(ADE.charAt(indexed),"_");
-            } else if (ADE.charAt(3) != "_") {
-            	$("#A4").css("background-color","var(--dkgrey)");
-              var AEE = ADE;
-            } else {
-            	var AEE = ADE;
-            }
-            if (AEE.includes(validateA5)) {
-            	$("#A5").css("background-color","var(--yellow)");
-              let indexed = AEE.indexOf(validateA5);
-              var AFE = AEE.replace(AEE.charAt(indexed),"_");
-            } else if (AEE.charAt(4) != "_") {
-            	$("#A5").css("background-color","var(--dkgrey)");
-              var AFE = AEE;
-            } else {
-            	var AFE = AEE;
-            }
-            
-						document.getElementById("testValidate2").innerHTML = AFE;
-       }
-   });
-   // SECOND GUESS VALIDATION
+$("#validateGuessB").click(function() {
+  if ($("#B").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessC").click(function() {
+  if ($("#C").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessD").click(function() {
+  if ($("#D").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessE").click(function() {
+  if ($("#E").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessF").click(function() {
+  if ($("#F").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
 
-					$("#validateGuessB").click(function() {
-          this.disabled = true;
-          $("#B").prop('disabled', true);
+function validateHit() {
+  var aLen = $("#A").val().length;
+  var bLen = $("#B").val().length;
+  var cLen = $("#C").val().length;
+  var dLen = $("#D").val().length;
+  var eLen = $("#E").val().length;
+  var fLen = $("#F").val().length;
 
-          var validateB1 = $("#B1").val();
-          var validateB2 = $("#B2").val();
-          var validateB3 = $("#B3").val();
-          var validateB4 = $("#B4").val();
-          var validateB5 = $("#B5").val();
-          var sw = newSecretWord();
-          var validateSw1 = sw.charAt(0);
-          var validateSw2 = sw.charAt(1);
-          var validateSw3 = sw.charAt(2);
-          var validateSw4 = sw.charAt(3);
-          var validateSw5 = sw.charAt(4);
+  if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
+    return {
+      guess: "#F",
+      lOne: "#F1",
+      lTwo: "#F2",
+      lThree: "#F3",
+      lFour: "#F4",
+      lFive: "#F5",
+      lastGuess: true,
+      valButton: "#validateGuessF",
+      guessClass: ".sixth"
+    }
 
-          if (validateB1 === validateSw1) {
-            $("#B1").css("background-color", "var(--green)");
-          } else if (sw.includes(validateB1)) {
-            $("#B1").css("background-color", "var(--yellow)");
-          } else {
-            $("#B1").css("background-color", "var(--dkgrey)");
-          }
-          if (validateB2 === validateSw2) {
-            $("#B2").css("background-color", "var(--green)");
-          } else if (sw.includes(validateB2)) {
-            $("#B2").css("background-color", "var(--yellow)");
-          } else {
-            $("#B2").css("background-color", "var(--dkgrey)");
-          }
-          if (validateB3 === validateSw3) {
-            $("#B3").css("background-color", "var(--green)");
-          } else if (sw.includes(validateB3)) {
-            $("#B3").css("background-color", "var(--yellow)");
-          } else {
-            $("#B3").css("background-color", "var(--dkgrey)");
-          }
-          if (validateB4 === validateSw4) {
-            $("#B4").css("background-color", "var(--green)");
-          } else if (sw.includes(validateB4)) {
-            $("#B4").css("background-color", "var(--yellow)");
-          } else {
-            $("#B4").css("background-color", "var(--dkgrey)");
-          }
-          if (validateB5 === validateSw5) {
-            $("#B5").css("background-color", "var(--green)");
-          } else if (sw.includes(validateB5)) {
-            $("#B5").css("background-color", "var(--yellow)");
-          } else {
-            $("#B5").css("background-color", "var(--dkgrey)");
-          }
-        });
-      });
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
+    $("#F").prop('disabled', false);
+    $("#F").focus();
+    return {
+      guess: "#E",
+      lOne: "#E1",
+      lTwo: "#E2",
+      lThree: "#E3",
+      lFour: "#E4",
+      lFive: "#E5",
+      lastGuess: false,
+      valButton: "#validateGuessE",
+      guessClass: ".fifth"
+    }
+
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
+    $("#E").prop('disabled', false);
+    $("#E").focus();
+    return {
+      guess: "#D",
+      lOne: "#D1",
+      lTwo: "#D2",
+      lThree: "#D3",
+      lFour: "#D4",
+      lFive: "#D5",
+      lastGuess: false,
+      valButton: "#validateGuessD",
+      guessClass: ".fourth"
+    }
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
+    $("#D").prop('disabled', false);
+    $("#D").focus();
+    return {
+      guess: "#C",
+      lOne: "#C1",
+      lTwo: "#C2",
+      lThree: "#C3",
+      lFour: "#C4",
+      lFive: "#C5",
+      lastGuess: false,
+      valButton: "#validateGuessC",
+      guessClass: ".third"
+    }
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
+    $("#C").prop('disabled', false);
+    $("#C").focus();
+    console.log("second");
+    return {
+      guess: "#B",
+      lOne: "#B1",
+      lTwo: "#B2",
+      lThree: "#B3",
+      lFour: "#B4",
+      lFive: "#B5",
+      lastGuess: false,
+      valButton: "#validateGuessB",
+      guessClass: ".second"
+    };
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
+    $("#B").prop('disabled', false);
+    $("#B").focus();
+    console.log("first");
+    return {
+      guess: "#A",
+      lOne: "#A1",
+      lTwo: "#A2",
+      lThree: "#A3",
+      lFour: "#A4",
+      lFive: "#A5",
+      lastGuess: false,
+      valButton: "#validateGuessA",
+      guessClass: ".first"
+    };
+  }
+}
+
+
+function validVars() {
+  var guesses = validateHit();
+  return {
+    validate1: $(guesses.lOne).val(),
+    validate2: $(guesses.lTwo).val(),
+    validate3: $(guesses.lThree).val(),
+    validate4: $(guesses.lFour).val(),
+    validate5: $(guesses.lFive).val(),
+    swVal1: sw.charAt(0),
+    swVal2: sw.charAt(1),
+    swVal3: sw.charAt(2),
+    swVal4: sw.charAt(3),
+    swVal5: sw.charAt(4)
+  }
+}
+
+function validateGuess() {
+  var guessVar = validateHit();
+  var valVar = validVars();
+  var swL = newSecretWord();
+  //disables all inputs and buttons on last guess
+  if (guessVar.lastGuess === true) {
+    $("input").prop('disabled', true);
+    $(".val-check").prop('disabled', true);
+  } else {
+    $(guessVar.valButton).prop('disabled', true);
+    $(guessVar.guess).prop('disabled', true);
+    $(guessVar.guessClass).prop('disabled', true);
+  }
+  //initial check for correct letters in correct placements
+  if (valVar.validate1 === valVar.swVal1) {
+    AAA = "";
+    $(guessVar.lOne).css("background-color", "var(--green)");
+  } else {
+    AAA = valVar.swVal1;
+  }
+  if (valVar.validate2 === valVar.swVal2) {
+    AAB = "";
+    $(guessVar.lTwo).css("background-color", "var(--green)");
+  } else {
+    AAB = valVar.swVal2;
+  }
+  if (valVar.validate3 === valVar.swVal3) {
+    AAC = "";
+    $(guessVar.lThree).css("background-color", "var(--green)");
+  } else {
+    AAC = valVar.swVal3;
+  }
+  if (valVar.validate4 === valVar.swVal4) {
+    AAD = "";
+    $(guessVar.lFour).css("background-color", "var(--green)");
+  } else {
+    AAD = valVar.swVal4;
+  }
+  if (valVar.validate5 === valVar.swVal5) {
+    AAE = AAA + AAB + AAC + AAD;
+    $(guessVar.lFive).css("background-color", "var(--green)");
+  } else {
+    AAE = AAA + AAB + AAC + AAD + valVar.swVal5;
+  }
+
+  validateYellow(AAE);
+}
+
+function validateYellow(e) {
+  var lastPass = e;
+  var guessVar = validateHit();
+  var valVar = validVars();
+  console.log("activated YELLOW!" + lastPass);
+  if (valVar.validate1 === valVar.swVal1) {
+    ABE = lastPass;
+  } else if (lastPass.includes(valVar.validate1)) {
+    $(guessVar.lOne).css("background-color", "var(--yellow)");
+    let indexed = lastPass.indexOf(valVar.validate1);
+    ABE = lastPass.replace(lastPass.charAt(indexed), "");
+  } else {
+    $(guessVar.lOne).css("background-color", "var(--dkgrey)");
+    ABE = lastPass;
+  }
+
+  if (valVar.validate2 === valVar.swVal2) {
+    ACE = ABE;
+  } else if (ABE.includes(valVar.validate2)) {
+    $(guessVar.lTwo).css("background-color", "var(--yellow)");
+    let indexed = ABE.indexOf(valVar.validate2);
+    ACE = ABE.replace(ABE.charAt(indexed), "");
+  } else {
+    $(guessVar.lTwo).css("background-color", "var(--dkgrey)");
+    ACE = ABE;
+  }
+
+  if (valVar.validate3 === valVar.swVal3) {
+    ADE = ACE;
+  } else if (ACE.includes(valVar.validate3)) {
+    $(guessVar.lThree).css("background-color", "var(--yellow)");
+    let indexed = ACE.indexOf(valVar.validate3);
+    ADE = ACE.replace(ACE.charAt(indexed), "");
+  } else {
+    $(guessVar.lThree).css("background-color", "var(--dkgrey)");
+    ADE = ACE;
+  }
+
+  if (valVar.validate4 === valVar.swVal4) {
+    AEE = ADE;
+  } else if (ADE.includes(valVar.validate4)) {
+    $(guessVar.lFour).css("background-color", "var(--yellow)");
+    let indexed = ADE.indexOf(valVar.validate4);
+    AEE = ADE.replace(ADE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFour).css("background-color", "var(--dkgrey)");
+    AEE = ADE;
+  }
+
+  if (valVar.validate5 === valVar.swVal5) {
+    AFE = AEE;
+  } else if (AEE.includes(valVar.validate5)) {
+    $(guessVar.lFive).css("background-color", "var(--yellow)");
+    let indexed = AEE.indexOf(valVar.validate5);
+    AFE = AEE.replace(AEE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFive).css("background-color", "var(--dkgrey)");
+    AFE = AEE;
+  }
+}

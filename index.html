@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>guess in 6</title>
+        <title>GUESS IN 6</title>
         <link rel="stylesheet" href="6style.css" type="text/css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="6script.js"></script>
 		</head>
 	<body>
-    <h1>
-      <div id="secretword">
-      </div>
-    </h1>
-    <div>
-      <input class="guess" id="A" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false"/>
-      <input class="guess" id="B" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
-    </div>
-    <div class="guesses">
-    <p>
-      <input id="A1" class="letters" type="text" maxlength="1" value="" autocomplete="off" spellcheck="false"/>
-      <input id="A2" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="A3" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="A4" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="A5" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <button type="button" id="validateGuessA">CHECK</button><br/>
-    </p>
-    <p>
-      <input id="B1" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="B2" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="B3" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="B4" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <input id="B5" class="letters" type="text" maxlength="1" value="" autocomplete="off"/>
-      <button type="button" id="validateGuessB">CHECK</button><br/>
-    </p>
-    </div>
-    <div>
-      <button type="button" onclick="reset()">
-        new puzzle
-      </button>
-        <div id="testValidate">
-        </div>
-        <div id="testValidate2">
-        </div>
-    </div>
+  <div id="title">
+    guess in 6
+  </div>
+    <table id="game-table">
+      <tr>
+        <td id="game-td">
+          <h1>
+            <div id="secretword">
+            </div>
+          </h1>
+          <div class="guess-inputs">
+            <input class="guess" id="A" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false"/>
+            <input class="guess" id="B" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
+            <input class="guess" id="C" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
+            <input class="guess" id="D" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
+            <input class="guess" id="E" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
+            <input class="guess" id="F" type="text" maxlength="5" value="" autocomplete="off" spellcheck="false" disabled="true"/>
+          </div>
+          <div class="guesses">
+          <p>
+            <input id="A1" class="letters first" type="text" maxlength="1" value="" autocomplete="off" spellcheck="false"/>
+            <input id="A2" class="letters first" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="A3" class="letters first" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="A4" class="letters first" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="A5" class="letters first" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessA">CHECK</button><br/>
+          </p>
+          <p>
+            <input id="B1" class="letters second" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="B2" class="letters second" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="B3" class="letters second" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="B4" class="letters second" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="B5" class="letters second" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessB">CHECK</button><br/>
+          </p>
+          <p>
+            <input id="C1" class="letters third" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="C2" class="letters third" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="C3" class="letters third" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="C4" class="letters third" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="C5" class="letters third" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessC">CHECK</button><br/>
+          </p>
+          <p>
+            <input id="D1" class="letters fourth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="D2" class="letters fourth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="D3" class="letters fourth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="D4" class="letters fourth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="D5" class="letters fourth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessD">CHECK</button><br/>
+          </p>
+          <p>
+            <input id="E1" class="letters fifth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="E2" class="letters fifth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="E3" class="letters fifth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="E4" class="letters fifth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="E5" class="letters fifth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessE">CHECK</button><br/>
+          </p>
+          <p>
+            <input id="F1" class="letters sixth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="F2" class="letters sixth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="F3" class="letters sixth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="F4" class="letters sixth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <input id="F5" class="letters sixth" type="text" maxlength="1" value="" autocomplete="off"/>
+            <button type="button" class="val-check" id="validateGuessF">CHECK</button><br/>
+          </p>
+          </div>
+          <div>
+            <button type="button" onclick="reset()">
+              new puzzle
+            </button>
+              <div id="testValidate">
+              </div>
+              <div id="testValidate2">
+              </div>
+          </div>
+        </td>
+      </tr>
+    </table>
 	</body>
 </html>

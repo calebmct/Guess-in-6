@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Itim&family=Nixie+One&display=swap');
 :root {
   --ltgrey: #d0d0d0;
   --red: #bf7373;
   --green: #a0e73a;
   --yellow: #ffdb4b;
+  --dkgrey: #787878;
+  --purple: #6666ff;
+  --title: #8e8d77;
+  --bg: #f3efed;
 }
 h1 {
-	font-family: 'DM Serif Display', serif;
+	font-family: 'Capriola', serif;
 	font-size: 4rem;
 	font-weight: 400;
 	color: black;
@@ -16,9 +22,32 @@ body, input {
 	font-family: 'Istok Web', sans-serif;
 	font-size: 2rem;
 	font-weight: 700;
+  background-color: var(--bg);
 }
-#secretword {
+#game-table {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  width: 70%;
+}
+#game-td {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+#secretword, #title {
+  text-align: center;
+  margin-top: 0px;
+}
+#title {
+  font-family: 'Lilita One', serif;
+	font-size: 4rem;
+	font-weight: 400;
+  color: var(--title);
+  margin: 1.5rem 0 5rem 0;
+}
+.letters:disabled {
+  color: black;
 }
 .guesses {
   text-align: center;
@@ -39,4 +68,12 @@ body, input {
   position: absolute;
   border: none;
   color: transparent;
+  opacity: 0%;
+  z-index: 20;
+}
+.letters {
+  font-family: 'Nixie One', serif;
+}
+.val-check {
+  display: none;
 }
