@@ -31,6 +31,21 @@ $(document).ready(function() {
       blurInput.focus()
     }, 10);*/
 });
+// TO DO LIST //
+/*
+ - no "select all" function
+ - index of common 5-letter words
+ - randomize word selection on load and "new puzzle" button
+ - add keyboard layout that updates letters based on guesses, with "ENTER" and "BACKSPACE" keys
+ - "new puzzle" resets and functions normally
+ - on correct guess, show the word with some type of congrats message
+ - on 6th incorrect guess - apology message and reveal the word, with option to play with a new word
+ - button to "give up" that will end the guessing and reveal the word
+ - add instructions pop up
+ - test/optimize for mobile
+ - refine CSS/styling
+
+*/
 
 //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
 $(".guess").on("keydown", function(event) {
