@@ -1,9 +1,3 @@
-/*eslint max-statements: ["error", 10, { "ignoreTopLevelFunctions": true }]*/
-function newSecretWord() {
-  var secretWord = "CLAMM";
-  return secretWord;
-}
-
 function reset() {
   $("input").val("");
   $("input").prop('disabled', true);
@@ -17,12 +11,25 @@ function reset() {
 //JQuery ready functions
 $(document).ready(function() {
 
+document.getElementById("secretword").innerHTML = newSecretWord();
+
+	function newSecretWord() {
+    var secretWord = "CLAMM";
+    document.getElementById("newWordd").innerHTML = secretWord;
+    return secretWord;
+  }
+/*
+	$("#newWord").click(function() {
+    var newWordz = document.getElementById("newWord").innerHTML; //replace with dataIndex once index is created
+    console.log(newWordz + "test");
+  }); */
+  
+//  document.getElementById("newWord").click();
+
   $("#A").focus();
 
-  document.getElementById("secretword").innerHTML = newSecretWord();
-
   $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
-    $(this).selectionStart = $(".guess").selectionEnd;
+    $(this).selectionStart = $(this).selectionEnd;
   }, false);
 
   /*$(".guess").on("blur", function() {
@@ -44,6 +51,7 @@ $(document).ready(function() {
  - add instructions pop up
  - test/optimize for mobile
  - refine CSS/styling
+ - add favicon
 
 */
 
@@ -68,8 +76,8 @@ $(".guess").on("input", function() {
 
 // GLOBAL VARS
 
-var sw = newSecretWord();
-var swL = newSecretWord();
+var sw;
+var swL = sw;
 var guess;
 var lOne;
 var lTwo;
@@ -96,12 +104,19 @@ var swVal4;
 var swVal5;
 var guessClass;
 
-
+function newWord(){
+		window.setTimeout(function() { 
+    	sw = document.getElementById("newWordd").innerHTML;
+	    console.log(sw + " newz");
+    }, 100);
+}
+newWord();
 //"Enter" submits answer
 $("#A").on("keydown", function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
     document.getElementById("validateGuessA").click();
+    console.log(sw);
   }
 });
 $("#B").on("keydown", function(event) {
@@ -383,7 +398,6 @@ function validVars() {
 function validateGuess() {
   var guessVar = validateHit();
   var valVar = validVars();
-  var swL = newSecretWord();
   //disables all inputs and buttons on last guess
   if (guessVar.lastGuess === true) {
     $("input").prop('disabled', true);

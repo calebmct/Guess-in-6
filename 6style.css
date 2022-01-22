@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Itim&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Capriola&family=Titan+One&family=Nixie+One&display=swap');
 :root {
   --ltgrey: #d0d0d0;
   --red: #bf7373;
@@ -9,11 +7,11 @@
   --yellow: #ffdb4b;
   --dkgrey: #787878;
   --purple: #6666ff;
-  --title: #8e8d77;
-  --bg: #f3efed;
+  --title: #c4e9e0;
+  --bg: #334447;
 }
 h1 {
-	font-family: 'Capriola', serif;
+	font-family: 'DM Sans', serif;
 	font-size: 4rem;
 	font-weight: 400;
 	color: black;
@@ -40,9 +38,10 @@ body, input {
   margin-top: 0px;
 }
 #title {
-  font-family: 'Lilita One', serif;
+  font-family: 'Titan One', serif;
 	font-size: 4rem;
 	font-weight: 400;
+  letter-spacing: 0.02em;
   color: var(--title);
   margin: 1.5rem 0 5rem 0;
 }
@@ -75,5 +74,9 @@ body, input {
   font-family: 'Nixie One', serif;
 }
 .val-check {
+  position: absolute;
+  opacity: 0;
+}
+#newWordd {
   display: none;
 }
