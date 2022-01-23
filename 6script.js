@@ -134,37 +134,37 @@ function newWord(){
 }
 newWord();
 //"Enter" submits answer
-$("#A").on("keydown", function(event) {
+$("#A").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessA").click();
 }
 });
-$("#B").on("keydown", function(event) {
+$("#B").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessB").click();
 }
 });
-$("#C").on("keydown", function(event) {
+$("#C").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessC").click();
 }
 });
-$("#D").on("keydown", function(event) {
+$("#D").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessD").click();
 }
 });
-$("#E").on("keydown", function(event) {
+$("#E").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessE").click();
 }
 });
-$("#F").on("keydown", function(event) {
+$("#F").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessF").click();
@@ -173,18 +173,17 @@ if (event.keyCode === 13 && $(this).val().length == 5) {
 
 //Inputs typed letters into corresponding inputs displayed
 $("#A").keyup(function() {
-  window.setTimeout(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    document.getElementById("A1").innerHTML(uno);
-    document.getElementById("A2").innerHTML(dos);
-    document.getElementById("A3").innerHTML(tres);
-    document.getElementById("A4").innerHTML(cuatro);
-    document.getElementById("A5").innerHTML(cinco);
-  }, 100);
+    let uno = $("#A").val().charAt(0).toUpperCase();
+    let dos = $("#A").val().charAt(1).toUpperCase();
+    let tres = $("#A").val().charAt(2).toUpperCase();
+    let cuatro = $("#A").val().charAt(3).toUpperCase();
+    let cinco = $("#A").val().charAt(4).toUpperCase();
+    console.log(cinco);
+    $("#A1").val(uno);
+    document.getElementById("A2").innerHTML = dos;
+    document.getElementById("A3").innerHTML = tres;
+    document.getElementById("A4").innerHTML = cuatro;
+    document.getElementById("A5").innerHTML = cinco;
 });
 
 $("#B").keyup(function() {
@@ -193,11 +192,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-document.getElementById("B1").innerHTML(uno);
-document.getElementById("B2").innerHTML(dos);
-document.getElementById("B3").innerHTML(tres);
-document.getElementById("B4").innerHTML(cuatro);
-document.getElementById("B5").innerHTML(cinco);
+document.getElementById("B1").innerHTML = uno;
+document.getElementById("B2").innerHTML = dos;
+document.getElementById("B3").innerHTML = tres;
+document.getElementById("B4").innerHTML = cuatro;
+document.getElementById("B5").innerHTML = cinco;
 });
 
 $("#C").keyup(function() {
@@ -206,11 +205,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-document.getElementById("C1").innerHTML(uno);
-document.getElementById("C2").innerHTML(dos);
-document.getElementById("C3").innerHTML(tres);
-document.getElementById("C4").innerHTML(cuatro);
-document.getElementById("C5").innerHTML(cinco);
+document.getElementById("C1").innerHTML = uno;
+document.getElementById("C2").innerHTML = dos;
+document.getElementById("C3").innerHTML = tres;
+document.getElementById("C4").innerHTML = cuatro;
+document.getElementById("C5").innerHTML = cinco;
 });
 
 $("#D").keyup(function() {
@@ -219,11 +218,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-document.getElementById("D1").innerHTML(uno);
-document.getElementById("D2").innerHTML(dos);
-document.getElementById("D3").innerHTML(tres);
-document.getElementById("D4").innerHTML(cuatro);
-document.getElementById("D5").innerHTML(cinco);
+document.getElementById("D1").innerHTML = uno;
+document.getElementById("D2").innerHTML = dos;
+document.getElementById("D3").innerHTML = tres;
+document.getElementById("D4").innerHTML = cuatro;
+document.getElementById("D5").innerHTML = cinco;
 });
 
 $("#E").keyup(function() {
@@ -232,11 +231,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-document.getElementById("E1").innerHTML(uno);
-document.getElementById("E2").innerHTML(dos);
-document.getElementById("E3").innerHTML(tres);
-document.getElementById("E4").innerHTML(cuatro);
-document.getElementById("E5").innerHTML(cinco);
+document.getElementById("E1").innerHTML = uno;
+document.getElementById("E2").innerHTML = dos;
+document.getElementById("E3").innerHTML = tres;
+document.getElementById("E4").innerHTML = cuatro;
+document.getElementById("E5").innerHTML = cinco;
 });
 
 $("#F").keyup(function() {
@@ -245,11 +244,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-document.getElementById("F1").innerHTML(uno);
-document.getElementById("F2").innerHTML(dos);
-document.getElementById("F3").innerHTML(tres);
-document.getElementById("F4").innerHTML(cuatro);
-document.getElementById("F5").innerHTML(cinco);
+document.getElementById("F1").innerHTML = uno;
+document.getElementById("F2").innerHTML = dos;
+document.getElementById("F3").innerHTML = tres;
+document.getElementById("F4").innerHTML = cuatro;
+document.getElementById("F5").innerHTML = cinco;
 });
 
 //Validation when submitting answers
