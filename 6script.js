@@ -37,7 +37,7 @@ function newSecretWord() {
 //JQuery ready functions
 $(document).ready(function() {
 
-document.getElementById("secretword").innerHTML = newSecretWord();
+newSecretWord();
 
 function focusGuess () {
 $(".guess").focus();
