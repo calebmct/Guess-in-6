@@ -12,7 +12,7 @@
   --bg: #334447;
 }
 h1 {
-	font-family: 'DM Sans', serif;
+	font-family: 'DM Sans', sans-serif;
 	font-size: 4rem;
 	font-weight: 400;
 	color: black;
@@ -97,21 +97,23 @@ body, input {
 }
 #notfound {
   margin: auto;
-  padding-top: 30%;
+  padding-top: 300px;
   width: 100%;
-  height: 80%;
+  height: 100%;
   font-family: 'DM Sans', sans-serif;
   font-size: 4.5rem;
   color: var(--red);
+  background-color: rgba(256, 256, 256, 0.7);
 }
 #winner {
   margin: auto;
   padding-top: 20%;
   width: 100%;
-  height: 80%;
+  height: 100%;
   font-family: 'Titan One', sans-serif;
   font-size: 7rem;
   color: var(--blue);
+  background-color: rgba(256, 256, 256, 0.7);
   text-shadow:
     -1px -1px 0 #61e294,
      0   -1px 0 #61e294,
@@ -124,12 +126,13 @@ body, input {
 }
 #sorry {
   margin: auto;
-  padding-top: 20%;
+  padding-top: 300px;
   width: 100%;
   height: 80%;
   font-family: 'Titan One', sans-serif;
   font-size: 7rem;
   color: var(--red);
+  
 /*  text-shadow:
     -1px -1px 0 #61e294,
      0   -1px 0 #61e294,
@@ -139,7 +142,7 @@ body, input {
      0    1px 0 #61e294,
     -1px  1px 0 #61e294,
     -1px  0   0 #61e294; */
-    background-color: rgba(256, 256, 256, 0.9);
+    background-color: rgba(256, 256, 256, 0.7);
 }
 #revealed {
   font-family: 'Titan One', sans-serif;

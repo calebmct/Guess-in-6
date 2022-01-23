@@ -34,12 +34,12 @@ function newSecretWord() {
 //JQuery ready functions
 $(document).ready(function() {
 
-//document.getElementById("secretword").innerHTML = newSecretWord();
-focusGuess();
+document.getElementById("secretword").innerHTML = newSecretWord();
 
 function focusGuess () {
 $(".guess").focus();
 }
+focusGuess();
 
 $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
   $(".guess").selectionStart = $(".guess").selectionEnd;
@@ -252,15 +252,11 @@ $("#F5").val(cinco);
 $("#validateGuessA").click(function() {
 if ($("#A").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#A").val().toLowerCase())) {
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  console.log("stopped");
+} else if (!shhh.includes($("#A").val().toLowerCase()) && !ghhh.includes($("#A").val().toLowerCase())) {
+	notAWord();
   return false;
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
@@ -269,15 +265,10 @@ if ($("#A").val().length != 5) {
 $("#validateGuessB").click(function() {
 if ($("#B").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#B").val().toLowerCase())) {
-  console.log("stopped");
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  return false;
+} else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
+  notAWord();
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
@@ -285,15 +276,10 @@ if ($("#B").val().length != 5) {
 $("#validateGuessC").click(function() {
 if ($("#C").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#C").val().toLowerCase())) {
-  console.log("stopped");
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  return false;
+} else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
+  notAWord();
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
@@ -301,15 +287,10 @@ if ($("#C").val().length != 5) {
 $("#validateGuessD").click(function() {
 if ($("#D").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#D").val().toLowerCase())) {
-  console.log("stopped");
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  return false;
+} else if (!shhh.includes($("#D").val().toLowerCase()) && !ghhh.includes($("#D").val().toLowerCase())) {
+  notAWord();
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
@@ -317,15 +298,10 @@ if ($("#D").val().length != 5) {
 $("#validateGuessE").click(function() {
 if ($("#E").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#E").val().toLowerCase())) {
-  console.log("stopped");
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  return false;
+} else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
+  notAWord();
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
@@ -333,22 +309,24 @@ if ($("#E").val().length != 5) {
 $("#validateGuessF").click(function() {
 if ($("#F").val().length != 5) {
   return false;
-} else if (!shhh.includes($("#F").val().toLowerCase())) {
-  console.log("stopped");
-  var ovA = document.getElementById("overlayA");
-  ovA.style.display = "block";
-  ovA.innerHTML = "<div id='notfound'><br/>word not found</div>";
-  setTimeout(function(){ovA.style.display = 'none';}, 3000);
-  return false;
+} else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
+  notAWord();
 } else {
-	document.getElementById("overlayA").style.display = 'none';
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
 }
 });
+//pops up "not a word" warning when guess doesn't match arrays
+function notAWord() {
+  document.getElementById("overlayA").style.display = "block";
+  document.getElementById("overlayA").innerHTML = "<div id='notfound'><br/>word not found</div>";
+  setTimeout(function(){document.getElementById("overlayA").style.display = 'none';}, 3000);
+}
 
+//Removes notAWord() warning on backspace
 $(".guess").on("keydown", function(event) {
-if (event.keyCode === 13) {
+if (event.keyCode === 8) {
   document.getElementById("overlayA").style.display = 'none';
 }
 });
