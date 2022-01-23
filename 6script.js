@@ -1,7 +1,7 @@
 function reset() {
 	location.reload;
 }
-function resetTest() {
+function testReset() {
   $("input").val("");
   $("input").prop('disabled', true);
   $("#A").prop('disabled', false);
@@ -38,6 +38,7 @@ function newSecretWord() {
 $(document).ready(function() {
 
 newSecretWord();
+//document.getElementById("secretword").innerHTML = newSecretWord();
 
 function focusGuess () {
 $(".guess").focus();
@@ -57,17 +58,16 @@ $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the hig
 // TO DO LIST //
 /*
 - no "select all" function
-- index of common 5-letter words
-- randomize word selection on load and "new puzzle" button
 - add keyboard layout that updates letters based on guesses, with "ENTER" and "BACKSPACE" keys
 - "new puzzle" resets and functions normally
-- on correct guess, show the word with some type of congrats message
 - on 6th incorrect guess - apology message and reveal the word, with option to play with a new word
+- 'X' button on congrats and sorry messages && when 'esc' is hit
 - button to "give up" that will end the guessing and reveal the word
 - add instructions pop up
 - test/optimize for mobile
 - refine CSS/styling
 - add favicon
+- add function to pass index # to url (at least to share) and pull from it to load that word
 
 */
 
@@ -75,7 +75,7 @@ $(".letters").click(function() {
 $(".guess").focus();
 });
 
-$(".letters").on("keydown",function() {
+$(".letters").on("keyup",function() {
 $(".guess").focus();
 });
 
@@ -173,16 +173,18 @@ if (event.keyCode === 13 && $(this).val().length == 5) {
 
 //Inputs typed letters into corresponding inputs displayed
 $("#A").keyup(function() {
-var uno = $(this).val().charAt(0).toUpperCase();
-var dos = $(this).val().charAt(1).toUpperCase();
-var tres = $(this).val().charAt(2).toUpperCase();
-var cuatro = $(this).val().charAt(3).toUpperCase();
-var cinco = $(this).val().charAt(4).toUpperCase();
-$("#A1").val(uno);
-$("#A2").val(dos);
-$("#A3").val(tres);
-$("#A4").val(cuatro);
-$("#A5").val(cinco);
+  window.setTimeout(function() {
+    var uno = $(this).val().charAt(0).toUpperCase();
+    var dos = $(this).val().charAt(1).toUpperCase();
+    var tres = $(this).val().charAt(2).toUpperCase();
+    var cuatro = $(this).val().charAt(3).toUpperCase();
+    var cinco = $(this).val().charAt(4).toUpperCase();
+    document.getElementById("A1").innerHTML(uno);
+    document.getElementById("A2").innerHTML(dos);
+    document.getElementById("A3").innerHTML(tres);
+    document.getElementById("A4").innerHTML(cuatro);
+    document.getElementById("A5").innerHTML(cinco);
+  }, 100);
 });
 
 $("#B").keyup(function() {
@@ -191,11 +193,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-$("#B1").val(uno);
-$("#B2").val(dos);
-$("#B3").val(tres);
-$("#B4").val(cuatro);
-$("#B5").val(cinco);
+document.getElementById("B1").innerHTML(uno);
+document.getElementById("B2").innerHTML(dos);
+document.getElementById("B3").innerHTML(tres);
+document.getElementById("B4").innerHTML(cuatro);
+document.getElementById("B5").innerHTML(cinco);
 });
 
 $("#C").keyup(function() {
@@ -204,11 +206,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-$("#C1").val(uno);
-$("#C2").val(dos);
-$("#C3").val(tres);
-$("#C4").val(cuatro);
-$("#C5").val(cinco);
+document.getElementById("C1").innerHTML(uno);
+document.getElementById("C2").innerHTML(dos);
+document.getElementById("C3").innerHTML(tres);
+document.getElementById("C4").innerHTML(cuatro);
+document.getElementById("C5").innerHTML(cinco);
 });
 
 $("#D").keyup(function() {
@@ -217,11 +219,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-$("#D1").val(uno);
-$("#D2").val(dos);
-$("#D3").val(tres);
-$("#D4").val(cuatro);
-$("#D5").val(cinco);
+document.getElementById("D1").innerHTML(uno);
+document.getElementById("D2").innerHTML(dos);
+document.getElementById("D3").innerHTML(tres);
+document.getElementById("D4").innerHTML(cuatro);
+document.getElementById("D5").innerHTML(cinco);
 });
 
 $("#E").keyup(function() {
@@ -230,11 +232,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-$("#E1").val(uno);
-$("#E2").val(dos);
-$("#E3").val(tres);
-$("#E4").val(cuatro);
-$("#E5").val(cinco);
+document.getElementById("E1").innerHTML(uno);
+document.getElementById("E2").innerHTML(dos);
+document.getElementById("E3").innerHTML(tres);
+document.getElementById("E4").innerHTML(cuatro);
+document.getElementById("E5").innerHTML(cinco);
 });
 
 $("#F").keyup(function() {
@@ -243,11 +245,11 @@ var dos = $(this).val().charAt(1).toUpperCase();
 var tres = $(this).val().charAt(2).toUpperCase();
 var cuatro = $(this).val().charAt(3).toUpperCase();
 var cinco = $(this).val().charAt(4).toUpperCase();
-$("#F1").val(uno);
-$("#F2").val(dos);
-$("#F3").val(tres);
-$("#F4").val(cuatro);
-$("#F5").val(cinco);
+document.getElementById("F1").innerHTML(uno);
+document.getElementById("F2").innerHTML(dos);
+document.getElementById("F3").innerHTML(tres);
+document.getElementById("F4").innerHTML(cuatro);
+document.getElementById("F5").innerHTML(cinco);
 });
 
 //Validation when submitting answers
@@ -570,12 +572,10 @@ function win() {
   document.getElementById("overlayB").innerHTML = "<div id='winner'><br/>CONGRATS!<br/><div id='wintext'>the word was:<div id='answer'>"+sw+"</div></div></div>";
   $("input").prop('disabled', true);
   $(".val-check").prop('disabled', true);
-  console.log("WIN");
 }
 function sorry() {
 	document.getElementById("overlayB").style.display = "block";
   document.getElementById("overlayB").innerHTML = "<div id='sorry'><br/>sorry.<div id='revealed'>the correct answer was<div id='word'>" + sw + "</div></div></div>";
   $("input").prop('disabled', true);
   $(".val-check").prop('disabled', true);
-  console.log("loss=" + sw);
 }
