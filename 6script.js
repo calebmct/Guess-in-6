@@ -1,4 +1,7 @@
 function reset() {
+	location.reload;
+}
+function resetTest() {
   $("input").val("");
   $("input").prop('disabled', true);
   $("#A").prop('disabled', false);
@@ -564,7 +567,7 @@ if (valVar.validate5 === valVar.swVal5) {
 }
 function win() {
   document.getElementById("overlayB").style.display = "block";
-  document.getElementById("overlayB").innerHTML = "<div id='winner'><br/>CONGRATS!</div>";
+  document.getElementById("overlayB").innerHTML = "<div id='winner'><br/>CONGRATS!<br/><div id='wintext'>the word was:<div id='answer'>"+sw+"</div></div></div>";
   $("input").prop('disabled', true);
   $(".val-check").prop('disabled', true);
   console.log("WIN");
