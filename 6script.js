@@ -24,499 +24,494 @@ var ghhh = [
   "scrae","scrag","scran","scrat","scraw","scray","scrim","scrip","scrob","scrod","scrog","scrow","scudi","scudo","scuds","scuff","scuft","scugs","sculk","scull","sculp","sculs","scums","scups","scurf","scurs","scuse","scuta","scute","scuts","scuzz","scyes","sdayn","sdein","seals","seame","seams","seamy","seans","seare","sears","sease","seats","seaze","sebum","secco","sechs","sects","seder","sedes","sedge","sedgy","sedum","seeds","seeks","seeld","seels","seely","seems","seeps","seepy","seers","sefer","segar","segni","segno","segol","segos","sehri","seifs","seils","seine","seirs","seise","seism","seity","seiza","sekos","sekts","selah","seles","selfs","sella","selle","sells","selva","semee","semes","semie","semis","senas","sends","senes","sengi","senna","senor","sensa","sensi","sente","senti","sents","senvy","senza","sepad","sepal","sepic","sepoy","septa","septs","serac","serai","seral","sered","serer","seres","serfs","serge","seric","serin","serks","seron","serow","serra","serre","serrs","serry","servo","sesey","sessa","setae","setal","seton","setts","sewan","sewar","sewed","sewel","sewen","sewin","sexed","sexer","sexes","sexto","sexts","seyen","shads","shags","shahs","shako","shakt","shalm","shaly","shama","shams","shand","shans","shaps","sharn","shash","shaul","shawm","shawn","shaws","shaya","shays","shchi","sheaf","sheal","sheas","sheds","sheel","shend","shent","sheol","sherd","shere","shero","shets","sheva","shewn","shews","shiai","shiel","shier","shies","shill","shily","shims","shins","ships","shirr","shirs","shish","shiso","shist","shite","shits","shiur","shiva","shive","shivs","shlep","shlub","shmek","shmoe","shoat","shoed","shoer","shoes","shogi","shogs","shoji","shojo","shola","shool","shoon","shoos","shope","shops","shorl","shote","shots","shott","showd","shows","shoyu","shred","shris","shrow","shtik","shtum","shtup","shule","shuln","shuls","shuns","shura","shute","shuts","shwas","shyer","sials","sibbs","sibyl","sices","sicht","sicko","sicks","sicky","sidas","sided","sider","sides","sidha","sidhe","sidle","sield","siens","sient","sieth","sieur","sifts","sighs","sigil","sigla","signa","signs","sijos","sikas","siker","sikes","silds","siled","silen","siler","siles","silex","silks","sills","silos","silts","silty","silva","simar","simas","simba","simis","simps","simul","sinds","sined","sines","sings","sinhs","sinks","sinky","sinus","siped","sipes","sippy","sired","siree","sires","sirih","siris","siroc","sirra","sirup","sisal","sises","sista","sists","sitar","sited","sites","sithe","sitka","situp","situs","siver","sixer","sixes","sixmo","sixte","sizar","sized","sizel","sizer","sizes","skags","skail","skald","skank","skart","skats","skatt","skaws","skean","skear","skeds","skeed","skeef","skeen","skeer","skees","skeet","skegg","skegs","skein","skelf","skell","skelm","skelp","skene","skens","skeos","skeps","skers","skets","skews","skids","skied","skies","skiey","skimo","skims","skink","skins","skint","skios","skips","skirl","skirr","skite","skits","skive","skivy","sklim","skoal","skody","skoff","skogs","skols","skool","skort","skosh","skran","skrik","skuas","skugs","skyed","skyer","skyey","skyfs","skyre","skyrs","skyte","slabs","slade","slaes","slags","slaid","slake","slams","slane","slank","slaps","slart","slats","slaty","slaws","slays","slebs","sleds","sleer","slews","sleys","slier","slily","slims","slipe","slips","slipt","slish","slits","slive","sloan","slobs","sloes","slogs","sloid","slojd","slomo","sloom","sloot","slops","slopy","slorm","slots","slove","slows","sloyd","slubb","slubs","slued","slues","sluff","slugs","sluit","slums","slurb","slurs","sluse","sluts","slyer","slype","smaak","smaik","smalm","smalt","smarm","smaze","smeek","smees","smeik","smeke","smerk","smews","smirr","smirs","smits","smogs","smoko","smolt","smoor","smoot","smore","smorg","smout","smowt","smugs","smurs","smush","smuts","snabs","snafu","snags","snaps","snarf","snark","snars","snary","snash","snath","snaws","snead","sneap","snebs","sneck","sneds","sneed","snees","snell","snibs","snick","snies","snift","snigs","snips","snipy","snirt","snits","snobs","snods","snoek","snoep","snogs","snoke","snood","snook","snool","snoot","snots","snowk","snows","snubs","snugs","snush","snyes","soaks","soaps","soare","soars","soave","sobas","socas","soces","socko","socks","socle","sodas","soddy","sodic","sodom","sofar","sofas","softa","softs","softy","soger","sohur","soils","soily","sojas","sojus","sokah","soken","sokes","sokol","solah","solan","solas","solde","soldi","soldo","solds","soled","solei","soler","soles","solon","solos","solum","solus","soman","somas","sonce","sonde","sones","songs","sonly","sonne","sonny","sonse","sonsy","sooey","sooks","sooky","soole","sools","sooms","soops","soote","soots","sophs","sophy","sopor","soppy","sopra","soral","soras","sorbo","sorbs","sorda","sordo","sords","sored","soree","sorel","sorer","sores","sorex","sorgo","sorns","sorra","sorta","sorts","sorus","soths","sotol","souce","souct","sough","souks","souls","soums","soups","soupy","sours","souse","souts","sowar","sowce","sowed","sowff","sowfs","sowle","sowls","sowms","sownd","sowne","sowps","sowse","sowth","soyas","soyle","soyuz","sozin","spacy","spado","spaed","spaer","spaes","spags","spahi","spail","spain","spait","spake","spald","spale","spall","spalt","spams","spane","spang","spans","spard","spars","spart","spate","spats","spaul","spawl","spaws","spayd","spays","spaza","spazz","speal","spean","speat","specs","spect","speel","speer","speil","speir","speks","speld","spelk","speos","spets","speug","spews","spewy","spial","spica","spick","spics","spide","spier","spies","spiff","spifs","spiks","spile","spims","spina","spink","spins","spirt","spiry","spits","spitz","spivs","splay","splog","spode","spods","spoom","spoor","spoot","spork","sposh","spots","sprad","sprag","sprat","spred","sprew","sprit","sprod","sprog","sprue","sprug","spuds","spued","spuer","spues","spugs","spule","spume","spumy","spurs","sputa","spyal","spyre","squab","squaw","squeg","squid","squit","squiz","stabs","stade","stags","stagy","staig","stane","stang","staph","staps","starn","starr","stars","stats","staun","staws","stays","stean","stear","stedd","stede","steds","steek","steem","steen","steil","stela","stele","stell","steme","stems","stend","steno","stens","stent","steps","stept","stere","stets","stews","stewy","steys","stich","stied","sties","stilb","stile","stime","stims","stimy","stipa","stipe","stire","stirk","stirp","stirs","stive","stivy","stoae","stoai","stoas","stoat","stobs","stoep","stogy","stoit","stoln","stoma","stond","stong","stonk","stonn","stook","stoor","stope","stops","stopt","stoss","stots","stott","stoun","stoup","stour","stown","stowp","stows","strad","strae","strag","strak","strep","strew","stria","strig","strim","strop","strow","stroy","strum","stubs","stude","studs","stull","stulm","stumm","stums","stuns","stupa","stupe","sture","sturt","styed","styes","styli","stylo","styme","stymy","styre","styte","subah","subas","subby","suber","subha","succi","sucks","sucky","sucre","sudds","sudor","sudsy","suede","suent","suers","suete","suets","suety","sugan","sughs","sugos","suhur","suids","suint","suits","sujee","sukhs","sukuk","sulci","sulfa","sulfo","sulks","sulph","sulus","sumis","summa","sumos","sumph","sumps","sunis","sunks","sunna","sunns","sunup","supes","supra","surah","sural","suras","surat","surds","sured","sures","surfs","surfy","surgy","surra","sused","suses","susus","sutor","sutra","sutta","swabs","swack","swads","swage","swags","swail","swain","swale","swaly","swamy","swang","swank","swans","swaps","swapt","sward","sware","swarf","swart","swats","swayl","sways","sweal","swede","sweed","sweel","sweer","swees","sweir","swelt","swerf","sweys","swies","swigs","swile","swims","swink","swipe","swire","swiss","swith","swits","swive","swizz","swobs","swole","swoln","swops","swopt","swots","swoun","sybbe","sybil","syboe","sybow","sycee","syces","sycon","syens","syker","sykes","sylis","sylph","sylva","symar",
   "synch","syncs","synds","syned","synes","synth","syped","sypes","syphs","syrah","syren","sysop","sythe","syver","taals","taata","taber","tabes","tabid","tabis","tabla","tabor","tabun","tabus","tacan","taces","tacet","tache","tacho","tachs","tacks","tacos","tacts","taels","tafia","taggy","tagma","tahas","tahrs","taiga","taigs","taiko","tails","tains","taira","taish","taits","tajes","takas","takes","takhi","takin","takis","takky","talak","talaq","talar","talas","talcs","talcy","talea","taler","tales","talks","talky","talls","talma","talpa","taluk","talus","tamal","tamed","tames","tamin","tamis","tammy","tamps","tanas","tanga","tangi","tangs","tanhs","tanka","tanks","tanky","tanna","tansy","tanti","tanto","tanty","tapas","taped","tapen","tapes","tapet","tapis","tappa","tapus","taras","tardo","tared","tares","targa","targe","tarns","taroc","tarok","taros","tarps","tarre","tarry","tarsi","tarts","tarty","tasar","tased","taser","tases","tasks","tassa","tasse","tasso","tatar","tater","tates","taths","tatie","tatou","tatts","tatus","taube","tauld","tauon","taupe","tauts","tavah","tavas","taver","tawai","tawas","tawed","tawer","tawie","tawse","tawts","taxed","taxer","taxes","taxis","taxol","taxon","taxor","taxus","tayra","tazza","tazze","teade","teads","teaed","teaks","teals","teams","tears","teats","teaze","techs","techy","tecta","teels","teems","teend","teene","teens","teeny","teers","teffs","teggs","tegua","tegus","tehrs","teiid","teils","teind","teins","telae","telco","teles","telex","telia","telic","tells","telly","teloi","telos","temed","temes","tempi","temps","tempt","temse","tench","tends","tendu","tenes","tenge","tenia","tenne","tenno","tenny","tenon","tents","tenty","tenue","tepal","tepas","tepoy","terai","teras","terce","terek","teres","terfe","terfs","terga","terms","terne","terns","terry","terts","tesla","testa","teste","tests","tetes","teths","tetra","tetri","teuch","teugh","tewed","tewel","tewit","texas","texes","texts","thack","thagi","thaim","thale","thali","thana","thane","thang","thans","thanx","tharm","thars","thaws","thawy","thebe","theca","theed","theek","thees","thegn","theic","thein","thelf","thema","thens","theow","therm","thesp","thete","thews","thewy","thigs","thilk","thill","thine","thins","thiol","thirl","thoft","thole","tholi","thoro","thorp","thous","thowl","thrae","thraw","thrid","thrip","throe","thuds","thugs","thuja","thunk","thurl","thuya","thymi","thymy","tians","tiars","tical","ticca","ticed","tices","tichy","ticks","ticky","tiddy","tided","tides","tiers","tiffs","tifos","tifts","tiges","tigon","tikas","tikes","tikis","tikka","tilak","tiled","tiler","tiles","tills","tilly","tilth","tilts","timbo","timed","times","timon","timps","tinas","tinct","tinds","tinea","tined","tines","tinge","tings","tinks","tinny","tints","tinty","tipis","tippy","tired","tires","tirls","tiros","tirrs","titch","titer","titis","titre","titty","titup","tiyin","tiyns","tizes","tizzy","toads","toady","toaze","tocks","tocky","tocos","todde","toeas","toffs","toffy","tofts","tofus","togae","togas","toged","toges","togue","tohos","toile","toils","toing","toise","toits","tokay","toked","toker","tokes","tokos","tolan","tolar","tolas","toled","toles","tolls","tolly","tolts","tolus","tolyl","toman","tombs","tomes","tomia","tommy","tomos","tondi","tondo","toned","toner","tones","toney","tongs","tonka","tonks","tonne","tonus","tools","tooms","toons","toots","toped","topee","topek","toper","topes","tophe","tophi","tophs","topis","topoi","topos","toppy","toque","torah","toran","toras","torcs","tores","toric","torii","toros","torot","torrs","torse","torsi","torsk","torta","torte","torts","tosas","tosed","toses","toshy","tossy","toted","toter","totes","totty","touks","touns","tours","touse","tousy","touts","touze","touzy","towed","towie","towns","towny","towse","towsy","towts","towze","towzy","toyed","toyer","toyon","toyos","tozed","tozes","tozie","trabs","trads","tragi","traik","trams","trank","tranq","trans","trant","trape","traps","trapt","trass","trats","tratt","trave","trayf","trays","treck","treed","treen","trees","trefa","treif","treks","trema","trems","tress","trest","trets","trews","treyf","treys","triac","tride","trier","tries","triff","trigo","trigs","trike","trild","trill","trims","trine","trins","triol","trior","trios","trips","tripy","trist","troad","troak","troat","trock","trode","trods","trogs","trois","troke","tromp","trona","tronc","trone","tronk","trons","trooz","troth","trots","trows","troys","trued","trues","trugo","trugs","trull","tryer","tryke","tryma","tryps","tsade","tsadi","tsars","tsked","tsuba","tsubo","tuans","tuart","tuath","tubae","tubar","tubas","tubby","tubed","tubes","tucks","tufas","tuffe","tuffs","tufts","tufty","tugra","tuile","tuina","tuism","tuktu","tules","tulpa","tulsi","tumid","tummy","tumps","tumpy","tunas","tunds","tuned","tuner","tunes","tungs","tunny","tupek","tupik","tuple","tuque","turds","turfs","turfy","turks","turme","turms","turns","turnt","turps","turrs","tushy","tusks","tusky","tutee","tutti","tutty","tutus","tuxes","tuyer","twaes","twain","twals","twank","twats","tways","tweel","tween","tweep","tweer","twerk","twerp","twier","twigs","twill","twilt","twink","twins","twiny","twire","twirp","twite","twits","twoer","twyer","tyees","tyers","tyiyn","tykes","tyler","tymps","tynde","tyned","tynes","typal","typed","types","typey","typic","typos","typps","typto","tyran","tyred","tyres","tyros","tythe","tzars","udals","udons","ugali","ugged","uhlan","uhuru","ukase","ulama","ulans","ulema","ulmin","ulnad","ulnae","ulnar","ulnas","ulpan","ulvas","ulyie","ulzie","umami","umbel","umber","umble","umbos","umbre","umiac","umiak","umiaq","ummah","ummas","ummed","umped","umphs","umpie","umpty","umrah","umras","unais","unapt","unarm","unary","unaus","unbag","unban","unbar","unbed","unbid","unbox","uncap","unces","uncia","uncos","uncoy","uncus","undam","undee","undos","undug","uneth","unfix","ungag","unget","ungod","ungot","ungum","unhat","unhip","unica","units","unjam","unked","unket","unkid","unlaw","unlay","unled","unlet","unlid","unman","unmew","unmix","unpay","unpeg","unpen","unpin","unred","unrid","unrig","unrip","unsaw","unsay","unsee","unsew","unsex","unsod","untax","untin","unwet","unwit","unwon","upbow","upbye","updos","updry","upend","upjet","uplay","upled","uplit","upped","upran","uprun","upsee","upsey","uptak","upter","uptie","uraei","urali","uraos","urare","urari","urase","urate","urbex","urbia","urdee","ureal","ureas","uredo","ureic","urena","urent","urged","urger","urges","urial","urite","urman","urnal","urned","urped","ursae","ursid","urson","urubu","urvas","users","usnea","usque","usure","usury","uteri","uveal","uveas","uvula","vacua","vaded","vades","vagal","vagus","vails","vaire","vairs","vairy","vakas","vakil","vales","valis","valse","vamps","vampy","vanda","vaned","vanes","vangs","vants","vaped","vaper","vapes","varan","varas","vardy","varec","vares","varia","varix","varna","varus","varve","vasal","vases","vasts","vasty","vatic","vatus","vauch","vaute","vauts","vawte","vaxes","veale","veals","vealy","veena","veeps","veers","veery","vegas","veges","vegie","vegos","vehme","veils","veily","veins","veiny","velar","velds","veldt","veles","vells","velum","venae","venal","vends","vendu","veney","venge","venin","vents","venus","verbs","verra","verry","verst","verts","vertu","vespa","vesta","vests","vetch","vexed","vexer","vexes","vexil","vezir","vials","viand","vibes","vibex","vibey","viced","vices","vichy","viers","views","viewy","vifda","viffs","vigas","vigia","vilde","viler","villi","vills","vimen","vinal","vinas","vinca","vined","viner","vines","vinew","vinic","vinos","vints","viold","viols","vired","vireo","vires","virga","virge","virid","virls","virtu","visas","vised","vises","visie","visne","vison","visto","vitae","vitas","vitex","vitro","vitta","vivas","vivat","vivda","viver","vives","vizir","vizor","vleis","vlies","vlogs","voars","vocab","voces","voddy","vodou","vodun","voema","vogie","voids","voile","voips",
   "volae","volar","voled","voles","volet","volks","volta","volte","volti","volts","volva","volve","vomer","voted","votes","vouge","voulu","vowed","vower","voxel","vozhd","vraic","vrils","vroom","vrous","vrouw","vrows","vuggs","vuggy","vughs","vughy","vulgo","vulns","vulva","vutty","waacs","wacke","wacko","wacks","wadds","waddy","waded","wader","wades","wadge","wadis","wadts","waffs","wafts","waged","wages","wagga","wagyu","wahoo","waide","waifs","waift","wails","wains","wairs","waite","waits","wakas","waked","waken","waker","wakes","wakfs","waldo","walds","waled","waler","wales","walie","walis","walks","walla","walls","wally","walty","wamed","wames","wamus","wands","waned","wanes","waney","wangs","wanks","wanky","wanle","wanly","wanna","wants","wanty","wanze","waqfs","warbs","warby","wards","wared","wares","warez","warks","warms","warns","warps","warre","warst","warts","wases","washy","wasms","wasps","waspy","wasts","watap","watts","wauff","waugh","wauks","waulk","wauls","waurs","waved","waves","wavey","wawas","wawes","wawls","waxed","waxer","waxes","wayed","wazir","wazoo","weald","weals","weamb","weans","wears","webby","weber","wecht","wedel","wedgy","weeds","weeke","weeks","weels","weems","weens","weeny","weeps","weepy","weest","weete","weets","wefte","wefts","weids","weils","weirs","weise","weize","wekas","welds","welke","welks","welkt","wells","welly","welts","wembs","wends","wenge","wenny","wents","weros","wersh","wests","wetas","wetly","wexed","wexes","whamo","whams","whang","whaps","whare","whata","whats","whaup","whaur","wheal","whear","wheen","wheep","wheft","whelk","whelm","whens","whets","whews","wheys","whids","whift","whigs","whilk","whims","whins","whios","whips","whipt","whirr","whirs","whish","whiss","whist","whits","whity","whizz","whomp","whoof","whoot","whops","whore","whorl","whort","whoso","whows","whump","whups","whyda","wicca","wicks","wicky","widdy","wides","wiels","wifed","wifes","wifey","wifie","wifty","wigan","wigga","wiggy","wikis","wilco","wilds","wiled","wiles","wilga","wilis","wilja","wills","wilts","wimps","winds","wined","wines","winey","winge","wings","wingy","winks","winna","winns","winos","winze","wiped","wiper","wipes","wired","wirer","wires","wirra","wised","wises","wisha","wisht","wisps","wists","witan","wited","wites","withe","withs","withy","wived","wiver","wives","wizen","wizes","woads","woald","wocks","wodge","woful","wojus","woker","wokka","wolds","wolfs","wolly","wolve","wombs","womby","womyn","wonga","wongi","wonks","wonky","wonts","woods","wooed","woofs","woofy","woold","wools","woons","woops","woopy","woose","woosh","wootz","words","works","worms","wormy","worts","wowed","wowee","woxen","wrang","wraps","wrapt","wrast","wrate","wrawl","wrens","wrick","wried","wrier","wries","writs","wroke","wroot","wroth","wryer","wuddy","wudus","wulls","wurst","wuses","wushu","wussy","wuxia","wyled","wyles","wynds","wynns","wyted","wytes","xebec","xenia","xenic","xenon","xeric","xerox","xerus","xoana","xrays","xylan","xylem","xylic","xylol","xylyl","xysti","xysts","yaars","yabas","yabba","yabby","yacca","yacka","yacks","yaffs","yager","yages","yagis","yahoo","yaird","yakka","yakow","yales","yamen","yampy","yamun","yangs","yanks","yapok","yapon","yapps","yappy","yarak","yarco","yards","yarer","yarfa","yarks","yarns","yarrs","yarta","yarto","yates","yauds","yauld","yaups","yawed","yawey","yawls","yawns","yawny","yawps","ybore","yclad","ycled","ycond","ydrad","ydred","yeads","yeahs","yealm","yeans","yeard","years","yecch","yechs","yechy","yedes","yeeds","yeesh","yeggs","yelks","yells","yelms","yelps","yelts","yenta","yente","yerba","yerds","yerks","yeses","yesks","yests","yesty","yetis","yetts","yeuks","yeuky","yeven","yeves","yewen","yexed","yexes","yfere","yiked","yikes","yills","yince","yipes","yippy","yirds","yirks","yirrs","yirth","yites","yitie","ylems","ylike","ylkes","ymolt","ympes","yobbo","yobby","yocks","yodel","yodhs","yodle","yogas","yogee","yoghs","yogic","yogin","yogis","yoick","yojan","yoked","yokel","yoker","yokes","yokul","yolks","yolky","yomim","yomps","yonic","yonis","yonks","yoofs","yoops","yores","yorks","yorps","youks","yourn","yours","yourt","youse","yowed","yowes","yowie","yowls","yowza","yrapt","yrent","yrivd","yrneh","ysame","ytost","yuans","yucas","yucca","yucch","yucko","yucks","yucky","yufts","yugas","yuked","yukes","yukky","yukos","yulan","yules","yummo","yummy","yumps","yupon","yuppy","yurta","yurts","yuzus","zabra","zacks","zaida","zaidy","zaire","zakat","zaman","zambo","zamia","zanja","zante","zanza","zanze","zappy","zarfs","zaris","zatis","zaxes","zayin","zazen","zeals","zebec","zebub","zebus","zedas","zeins","zendo","zerda","zerks","zeros","zests","zetas","zexes","zezes","zhomo","zibet","ziffs","zigan","zilas","zilch","zilla","zills","zimbi","zimbs","zinco","zincs","zincy","zineb","zines","zings","zingy","zinke","zinky","zippo","zippy","ziram","zitis","zizel","zizit","zlote","zloty","zoaea","zobos","zobus","zocco","zoeae","zoeal","zoeas","zoism","zoist","zombi","zonae","zonda","zoned","zoner","zones","zonks","zooea","zooey","zooid","zooks","zooms","zoons","zooty","zoppa","zoppo","zoril","zoris","zorro","zouks","zowee","zowie","zulus","zupan","zupas","zuppa","zurfs","zuzim","zygal","zygon","zymes","zymic"
-]
-
+];
+function newSecretWord() {
+  	var dataIndex = Math.floor(Math.random() * shhh.length);
+    var secretWord = shhh[dataIndex].toUpperCase();
+    document.getElementById("newWordd").innerHTML = secretWord;
+    return secretWord;
+  }
 //JQuery ready functions
 $(document).ready(function() {
 
-  document.getElementById("secretword").innerHTML = newSecretWord();
+document.getElementById("secretword").innerHTML = newSecretWord();
+
+/*
+	$("#newWord").click(function() {
+    var newWordz = document.getElementById("newWord").innerHTML; //replace with dataIndex once index is created
+    console.log(newWordz + "test");
+  }); */
   
-    function newSecretWord() {
-      var secretWord = "CLAMM";
-      document.getElementById("newWordd").innerHTML = secretWord;
-      return secretWord;
-    }
-  /*
-    $("#newWord").click(function() {
-      var newWordz = document.getElementById("newWord").innerHTML; //replace with dataIndex once index is created
-      console.log(newWordz + "test");
-    }); */
-    
-  //  document.getElementById("newWord").click();
-  
-    $("#A").focus();
-  
-    $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
-      $(this).selectionStart = $(this).selectionEnd;
-    }, false);
-  
-    /*$(".guess").on("blur", function() {
-      var blurInput = $(this);
-      setTimeout(function() {
-        blurInput.focus()
-      }, 10);*/
-  });
-  // TO DO LIST //
-  /*
-   - no "select all" function
-   - index of common 5-letter words
-   - randomize word selection on load and "new puzzle" button
-   - add keyboard layout that updates letters based on guesses, with "ENTER" and "BACKSPACE" keys
-   - "new puzzle" resets and functions normally
-   - on correct guess, show the word with some type of congrats message
-   - on 6th incorrect guess - apology message and reveal the word, with option to play with a new word
-   - button to "give up" that will end the guessing and reveal the word
-   - add instructions pop up
-   - test/optimize for mobile
-   - refine CSS/styling
-   - add favicon
-  
-  */
-  
-  //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
-  $(".guess").on("keydown", function(event) {
-    var arr = [8];
-    for (var i = 65; i <= 90; i++) {
-      arr.push(i);
-    }
-    if (jQuery.inArray(event.which, arr) === -1) {
-      event.preventDefault();
-    }
-  });
-  
-  //Only allow letters to be pasted
-  $(".guess").on("input", function() {
-    var regexp = /[^a-zA-Z]/g;
-    if ($(this).val().match(regexp)) {
-      $(this).val($(this).val().replace(regexp, ''));
-    }
-  });
-  
-  // GLOBAL VARS
-  
-  var sw;
-  var swL = sw;
-  var guess;
-  var lOne;
-  var lTwo;
-  var lThree;
-  var lFour;
-  var lFive;
-  var lastGuess;
-  var valButton;
-  var nextGuess;
-  var AAA;
-  var AAB;
-  var AAC;
-  var AAD;
-  var AAE;
-  var ABE;
-  var ACE;
-  var ADE;
-  var AEE;
-  var AFE;
-  var swVal1;
-  var swVal2;
-  var swVal3;
-  var swVal4;
-  var swVal5;
-  var guessClass;
-  
-  function newWord(){
-      window.setTimeout(function() { 
-        sw = document.getElementById("newWordd").innerHTML;
-        console.log(sw + " newz");
-      }, 100);
+//  document.getElementById("newWord").click();
+
+  $("#A").focus();
+
+  $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
+    $(this).selectionStart = $(this).selectionEnd;
+  }, false);
+
+  /*$(".guess").on("blur", function() {
+    var blurInput = $(this);
+    setTimeout(function() {
+      blurInput.focus()
+    }, 10);*/
+});
+// TO DO LIST //
+/*
+ - no "select all" function
+ - index of common 5-letter words
+ - randomize word selection on load and "new puzzle" button
+ - add keyboard layout that updates letters based on guesses, with "ENTER" and "BACKSPACE" keys
+ - "new puzzle" resets and functions normally
+ - on correct guess, show the word with some type of congrats message
+ - on 6th incorrect guess - apology message and reveal the word, with option to play with a new word
+ - button to "give up" that will end the guessing and reveal the word
+ - add instructions pop up
+ - test/optimize for mobile
+ - refine CSS/styling
+ - add favicon
+
+*/
+
+//Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
+$(".guess").on("keydown", function(event) {
+  var arr = [8];
+  for (var i = 65; i <= 90; i++) {
+    arr.push(i);
   }
-  newWord();
-  //"Enter" submits answer
-  $("#A").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessA").click();
-      console.log(sw);
-    }
-  });
-  $("#B").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessB").click();
-    }
-  });
-  $("#C").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessC").click();
-    }
-  });
-  $("#D").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessD").click();
-    }
-  });
-  $("#E").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessE").click();
-    }
-  });
-  $("#F").on("keydown", function(event) {
-    if (event.keyCode === 13 && $(this).val().length == 5) {
-      event.preventDefault();
-      document.getElementById("validateGuessF").click();
-    }
-  });
-  
-  //Inputs typed letters into corresponding inputs displayed
-  $("#A").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#A1").val(uno);
-    $("#A2").val(dos);
-    $("#A3").val(tres);
-    $("#A4").val(cuatro);
-    $("#A5").val(cinco);
-  });
-  
-  $("#B").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#B1").val(uno);
-    $("#B2").val(dos);
-    $("#B3").val(tres);
-    $("#B4").val(cuatro);
-    $("#B5").val(cinco);
-  });
-  
-  $("#C").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#C1").val(uno);
-    $("#C2").val(dos);
-    $("#C3").val(tres);
-    $("#C4").val(cuatro);
-    $("#C5").val(cinco);
-  });
-  
-  $("#D").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#D1").val(uno);
-    $("#D2").val(dos);
-    $("#D3").val(tres);
-    $("#D4").val(cuatro);
-    $("#D5").val(cinco);
-  });
-  
-  $("#E").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#E1").val(uno);
-    $("#E2").val(dos);
-    $("#E3").val(tres);
-    $("#E4").val(cuatro);
-    $("#E5").val(cinco);
-  });
-  
-  $("#F").keyup(function() {
-    var uno = $(this).val().charAt(0).toUpperCase();
-    var dos = $(this).val().charAt(1).toUpperCase();
-    var tres = $(this).val().charAt(2).toUpperCase();
-    var cuatro = $(this).val().charAt(3).toUpperCase();
-    var cinco = $(this).val().charAt(4).toUpperCase();
-    $("#F1").val(uno);
-    $("#F2").val(dos);
-    $("#F3").val(tres);
-    $("#F4").val(cuatro);
-    $("#F5").val(cinco);
-  });
-  
-  //Validation when submitting answers
-  
-  $("#validateGuessA").click(function() {
-    if ($("#A").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  
-  $("#validateGuessB").click(function() {
-    if ($("#B").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  $("#validateGuessC").click(function() {
-    if ($("#C").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  $("#validateGuessD").click(function() {
-    if ($("#D").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  $("#validateGuessE").click(function() {
-    if ($("#E").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  $("#validateGuessF").click(function() {
-    if ($("#F").val().length != 5) {
-      return false;
-    } else {
-      validateHit();
-      validateGuess();
-    }
-  });
-  
-  function validateHit() {
-    var aLen = $("#A").val().length;
-    var bLen = $("#B").val().length;
-    var cLen = $("#C").val().length;
-    var dLen = $("#D").val().length;
-    var eLen = $("#E").val().length;
-    var fLen = $("#F").val().length;
-  
-    if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
-      return {
-        guess: "#F",
-        lOne: "#F1",
-        lTwo: "#F2",
-        lThree: "#F3",
-        lFour: "#F4",
-        lFive: "#F5",
-        lastGuess: true,
-        valButton: "#validateGuessF",
-        guessClass: ".sixth"
-      }
-  
-    } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
-      $("#F").prop('disabled', false);
-      $("#F").focus();
-      return {
-        guess: "#E",
-        lOne: "#E1",
-        lTwo: "#E2",
-        lThree: "#E3",
-        lFour: "#E4",
-        lFive: "#E5",
-        lastGuess: false,
-        valButton: "#validateGuessE",
-        guessClass: ".fifth"
-      }
-  
-    } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
-      $("#E").prop('disabled', false);
-      $("#E").focus();
-      return {
-        guess: "#D",
-        lOne: "#D1",
-        lTwo: "#D2",
-        lThree: "#D3",
-        lFour: "#D4",
-        lFive: "#D5",
-        lastGuess: false,
-        valButton: "#validateGuessD",
-        guessClass: ".fourth"
-      }
-    } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
-      $("#D").prop('disabled', false);
-      $("#D").focus();
-      return {
-        guess: "#C",
-        lOne: "#C1",
-        lTwo: "#C2",
-        lThree: "#C3",
-        lFour: "#C4",
-        lFive: "#C5",
-        lastGuess: false,
-        valButton: "#validateGuessC",
-        guessClass: ".third"
-      }
-    } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
-      $("#C").prop('disabled', false);
-      $("#C").focus();
-      console.log("second");
-      return {
-        guess: "#B",
-        lOne: "#B1",
-        lTwo: "#B2",
-        lThree: "#B3",
-        lFour: "#B4",
-        lFive: "#B5",
-        lastGuess: false,
-        valButton: "#validateGuessB",
-        guessClass: ".second"
-      };
-    } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
-      $("#B").prop('disabled', false);
-      $("#B").focus();
-      console.log("first");
-      return {
-        guess: "#A",
-        lOne: "#A1",
-        lTwo: "#A2",
-        lThree: "#A3",
-        lFour: "#A4",
-        lFive: "#A5",
-        lastGuess: false,
-        valButton: "#validateGuessA",
-        guessClass: ".first"
-      };
-    }
+  if (jQuery.inArray(event.which, arr) === -1) {
+    event.preventDefault();
   }
-  
-  
-  function validVars() {
-    var guesses = validateHit();
+});
+
+//Only allow letters to be pasted
+$(".guess").on("input", function() {
+  var regexp = /[^a-zA-Z]/g;
+  if ($(this).val().match(regexp)) {
+    $(this).val($(this).val().replace(regexp, ''));
+  }
+});
+
+// GLOBAL VARS
+
+var sw;
+var swL = sw;
+var guess;
+var lOne;
+var lTwo;
+var lThree;
+var lFour;
+var lFive;
+var lastGuess;
+var valButton;
+var nextGuess;
+var AAA;
+var AAB;
+var AAC;
+var AAD;
+var AAE;
+var ABE;
+var ACE;
+var ADE;
+var AEE;
+var AFE;
+var swVal1;
+var swVal2;
+var swVal3;
+var swVal4;
+var swVal5;
+var guessClass;
+
+function newWord(){
+		window.setTimeout(function() { 
+    	sw = document.getElementById("newWordd").innerHTML;
+    }, 100);
+}
+newWord();
+//"Enter" submits answer
+$("#A").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessA").click();
+  }
+});
+$("#B").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessB").click();
+  }
+});
+$("#C").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessC").click();
+  }
+});
+$("#D").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessD").click();
+  }
+});
+$("#E").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessE").click();
+  }
+});
+$("#F").on("keydown", function(event) {
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessF").click();
+  }
+});
+
+//Inputs typed letters into corresponding inputs displayed
+$("#A").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#A1").val(uno);
+  $("#A2").val(dos);
+  $("#A3").val(tres);
+  $("#A4").val(cuatro);
+  $("#A5").val(cinco);
+});
+
+$("#B").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#B1").val(uno);
+  $("#B2").val(dos);
+  $("#B3").val(tres);
+  $("#B4").val(cuatro);
+  $("#B5").val(cinco);
+});
+
+$("#C").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#C1").val(uno);
+  $("#C2").val(dos);
+  $("#C3").val(tres);
+  $("#C4").val(cuatro);
+  $("#C5").val(cinco);
+});
+
+$("#D").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#D1").val(uno);
+  $("#D2").val(dos);
+  $("#D3").val(tres);
+  $("#D4").val(cuatro);
+  $("#D5").val(cinco);
+});
+
+$("#E").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#E1").val(uno);
+  $("#E2").val(dos);
+  $("#E3").val(tres);
+  $("#E4").val(cuatro);
+  $("#E5").val(cinco);
+});
+
+$("#F").keyup(function() {
+  var uno = $(this).val().charAt(0).toUpperCase();
+  var dos = $(this).val().charAt(1).toUpperCase();
+  var tres = $(this).val().charAt(2).toUpperCase();
+  var cuatro = $(this).val().charAt(3).toUpperCase();
+  var cinco = $(this).val().charAt(4).toUpperCase();
+  $("#F1").val(uno);
+  $("#F2").val(dos);
+  $("#F3").val(tres);
+  $("#F4").val(cuatro);
+  $("#F5").val(cinco);
+});
+
+//Validation when submitting answers
+
+$("#validateGuessA").click(function() {
+  if ($("#A").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+
+$("#validateGuessB").click(function() {
+  if ($("#B").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessC").click(function() {
+  if ($("#C").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessD").click(function() {
+  if ($("#D").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessE").click(function() {
+  if ($("#E").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+$("#validateGuessF").click(function() {
+  if ($("#F").val().length != 5) {
+    return false;
+  } else {
+    validateHit();
+    validateGuess();
+  }
+});
+
+function validateHit() {
+  var aLen = $("#A").val().length;
+  var bLen = $("#B").val().length;
+  var cLen = $("#C").val().length;
+  var dLen = $("#D").val().length;
+  var eLen = $("#E").val().length;
+  var fLen = $("#F").val().length;
+
+  if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     return {
-      validate1: $(guesses.lOne).val(),
-      validate2: $(guesses.lTwo).val(),
-      validate3: $(guesses.lThree).val(),
-      validate4: $(guesses.lFour).val(),
-      validate5: $(guesses.lFive).val(),
-      swVal1: sw.charAt(0),
-      swVal2: sw.charAt(1),
-      swVal3: sw.charAt(2),
-      swVal4: sw.charAt(3),
-      swVal5: sw.charAt(4)
+      guess: "#F",
+      lOne: "#F1",
+      lTwo: "#F2",
+      lThree: "#F3",
+      lFour: "#F4",
+      lFive: "#F5",
+      lastGuess: true,
+      valButton: "#validateGuessF",
+      guessClass: ".sixth"
     }
+
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
+    $("#F").prop('disabled', false);
+    $("#F").focus();
+    return {
+      guess: "#E",
+      lOne: "#E1",
+      lTwo: "#E2",
+      lThree: "#E3",
+      lFour: "#E4",
+      lFive: "#E5",
+      lastGuess: false,
+      valButton: "#validateGuessE",
+      guessClass: ".fifth"
+    }
+
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
+    $("#E").prop('disabled', false);
+    $("#E").focus();
+    return {
+      guess: "#D",
+      lOne: "#D1",
+      lTwo: "#D2",
+      lThree: "#D3",
+      lFour: "#D4",
+      lFive: "#D5",
+      lastGuess: false,
+      valButton: "#validateGuessD",
+      guessClass: ".fourth"
+    }
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
+    $("#D").prop('disabled', false);
+    $("#D").focus();
+    return {
+      guess: "#C",
+      lOne: "#C1",
+      lTwo: "#C2",
+      lThree: "#C3",
+      lFour: "#C4",
+      lFive: "#C5",
+      lastGuess: false,
+      valButton: "#validateGuessC",
+      guessClass: ".third"
+    }
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
+    $("#C").prop('disabled', false);
+    $("#C").focus();
+    return {
+      guess: "#B",
+      lOne: "#B1",
+      lTwo: "#B2",
+      lThree: "#B3",
+      lFour: "#B4",
+      lFive: "#B5",
+      lastGuess: false,
+      valButton: "#validateGuessB",
+      guessClass: ".second"
+    };
+  } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
+    $("#B").prop('disabled', false);
+    $("#B").focus();
+    return {
+      guess: "#A",
+      lOne: "#A1",
+      lTwo: "#A2",
+      lThree: "#A3",
+      lFour: "#A4",
+      lFive: "#A5",
+      lastGuess: false,
+      valButton: "#validateGuessA",
+      guessClass: ".first"
+    };
   }
-  
-  function validateGuess() {
-    var guessVar = validateHit();
-    var valVar = validVars();
-    //disables all inputs and buttons on last guess
-    if (guessVar.lastGuess === true) {
-      $("input").prop('disabled', true);
-      $(".val-check").prop('disabled', true);
-    } else {
-      $(guessVar.valButton).prop('disabled', true);
-      $(guessVar.guess).prop('disabled', true);
-      $(guessVar.guessClass).prop('disabled', true);
-    }
-    //initial check for correct letters in correct placements
-    if (valVar.validate1 === valVar.swVal1) {
-      AAA = "";
-      $(guessVar.lOne).css("background-color", "var(--green)");
-    } else {
-      AAA = valVar.swVal1;
-    }
-    if (valVar.validate2 === valVar.swVal2) {
-      AAB = "";
-      $(guessVar.lTwo).css("background-color", "var(--green)");
-    } else {
-      AAB = valVar.swVal2;
-    }
-    if (valVar.validate3 === valVar.swVal3) {
-      AAC = "";
-      $(guessVar.lThree).css("background-color", "var(--green)");
-    } else {
-      AAC = valVar.swVal3;
-    }
-    if (valVar.validate4 === valVar.swVal4) {
-      AAD = "";
-      $(guessVar.lFour).css("background-color", "var(--green)");
-    } else {
-      AAD = valVar.swVal4;
-    }
-    if (valVar.validate5 === valVar.swVal5) {
-      AAE = AAA + AAB + AAC + AAD;
-      $(guessVar.lFive).css("background-color", "var(--green)");
-    } else {
-      AAE = AAA + AAB + AAC + AAD + valVar.swVal5;
-    }
-  
-    validateYellow(AAE);
+}
+
+
+function validVars() {
+  var guesses = validateHit();
+  return {
+    validate1: $(guesses.lOne).val(),
+    validate2: $(guesses.lTwo).val(),
+    validate3: $(guesses.lThree).val(),
+    validate4: $(guesses.lFour).val(),
+    validate5: $(guesses.lFive).val(),
+    swVal1: sw.charAt(0),
+    swVal2: sw.charAt(1),
+    swVal3: sw.charAt(2),
+    swVal4: sw.charAt(3),
+    swVal5: sw.charAt(4)
   }
-  
-  function validateYellow(e) {
-    var lastPass = e;
-    var guessVar = validateHit();
-    var valVar = validVars();
-    console.log("activated YELLOW!" + lastPass);
-    if (valVar.validate1 === valVar.swVal1) {
-      ABE = lastPass;
-    } else if (lastPass.includes(valVar.validate1)) {
-      $(guessVar.lOne).css("background-color", "var(--yellow)");
-      let indexed = lastPass.indexOf(valVar.validate1);
-      ABE = lastPass.replace(lastPass.charAt(indexed), "");
-    } else {
-      $(guessVar.lOne).css("background-color", "var(--dkgrey)");
-      ABE = lastPass;
-    }
-  
-    if (valVar.validate2 === valVar.swVal2) {
-      ACE = ABE;
-    } else if (ABE.includes(valVar.validate2)) {
-      $(guessVar.lTwo).css("background-color", "var(--yellow)");
-      let indexed = ABE.indexOf(valVar.validate2);
-      ACE = ABE.replace(ABE.charAt(indexed), "");
-    } else {
-      $(guessVar.lTwo).css("background-color", "var(--dkgrey)");
-      ACE = ABE;
-    }
-  
-    if (valVar.validate3 === valVar.swVal3) {
-      ADE = ACE;
-    } else if (ACE.includes(valVar.validate3)) {
-      $(guessVar.lThree).css("background-color", "var(--yellow)");
-      let indexed = ACE.indexOf(valVar.validate3);
-      ADE = ACE.replace(ACE.charAt(indexed), "");
-    } else {
-      $(guessVar.lThree).css("background-color", "var(--dkgrey)");
-      ADE = ACE;
-    }
-  
-    if (valVar.validate4 === valVar.swVal4) {
-      AEE = ADE;
-    } else if (ADE.includes(valVar.validate4)) {
-      $(guessVar.lFour).css("background-color", "var(--yellow)");
-      let indexed = ADE.indexOf(valVar.validate4);
-      AEE = ADE.replace(ADE.charAt(indexed), "");
-    } else {
-      $(guessVar.lFour).css("background-color", "var(--dkgrey)");
-      AEE = ADE;
-    }
-  
-    if (valVar.validate5 === valVar.swVal5) {
-      AFE = AEE;
-    } else if (AEE.includes(valVar.validate5)) {
-      $(guessVar.lFive).css("background-color", "var(--yellow)");
-      let indexed = AEE.indexOf(valVar.validate5);
-      AFE = AEE.replace(AEE.charAt(indexed), "");
-    } else {
-      $(guessVar.lFive).css("background-color", "var(--dkgrey)");
-      AFE = AEE;
-    }
+}
+
+function validateGuess() {
+  var guessVar = validateHit();
+  var valVar = validVars();
+  //disables all inputs and buttons on last guess
+  if (guessVar.lastGuess === true) {
+    $("input").prop('disabled', true);
+    $(".val-check").prop('disabled', true);
+  } else {
+    $(guessVar.valButton).prop('disabled', true);
+    $(guessVar.guess).prop('disabled', true);
+    $(guessVar.guessClass).prop('disabled', true);
   }
+  //initial check for correct letters in correct placements
+  if (valVar.validate1 === valVar.swVal1) {
+    AAA = "";
+    $(guessVar.lOne).css("background-color", "var(--green)");
+  } else {
+    AAA = valVar.swVal1;
+  }
+  if (valVar.validate2 === valVar.swVal2) {
+    AAB = "";
+    $(guessVar.lTwo).css("background-color", "var(--green)");
+  } else {
+    AAB = valVar.swVal2;
+  }
+  if (valVar.validate3 === valVar.swVal3) {
+    AAC = "";
+    $(guessVar.lThree).css("background-color", "var(--green)");
+  } else {
+    AAC = valVar.swVal3;
+  }
+  if (valVar.validate4 === valVar.swVal4) {
+    AAD = "";
+    $(guessVar.lFour).css("background-color", "var(--green)");
+  } else {
+    AAD = valVar.swVal4;
+  }
+  if (valVar.validate5 === valVar.swVal5) {
+    AAE = AAA + AAB + AAC + AAD;
+    $(guessVar.lFive).css("background-color", "var(--green)");
+  } else {
+    AAE = AAA + AAB + AAC + AAD + valVar.swVal5;
+  }
+
+  validateYellow(AAE);
+}
+
+function validateYellow(e) {
+  var lastPass = e;
+  var guessVar = validateHit();
+  var valVar = validVars();
+  if (valVar.validate1 === valVar.swVal1) {
+    ABE = lastPass;
+  } else if (lastPass.includes(valVar.validate1)) {
+    $(guessVar.lOne).css("background-color", "var(--yellow)");
+    let indexed = lastPass.indexOf(valVar.validate1);
+    ABE = lastPass.replace(lastPass.charAt(indexed), "");
+  } else {
+    $(guessVar.lOne).css("background-color", "var(--dkgrey)");
+    ABE = lastPass;
+  }
+
+  if (valVar.validate2 === valVar.swVal2) {
+    ACE = ABE;
+  } else if (ABE.includes(valVar.validate2)) {
+    $(guessVar.lTwo).css("background-color", "var(--yellow)");
+    let indexed = ABE.indexOf(valVar.validate2);
+    ACE = ABE.replace(ABE.charAt(indexed), "");
+  } else {
+    $(guessVar.lTwo).css("background-color", "var(--dkgrey)");
+    ACE = ABE;
+  }
+
+  if (valVar.validate3 === valVar.swVal3) {
+    ADE = ACE;
+  } else if (ACE.includes(valVar.validate3)) {
+    $(guessVar.lThree).css("background-color", "var(--yellow)");
+    let indexed = ACE.indexOf(valVar.validate3);
+    ADE = ACE.replace(ACE.charAt(indexed), "");
+  } else {
+    $(guessVar.lThree).css("background-color", "var(--dkgrey)");
+    ADE = ACE;
+  }
+
+  if (valVar.validate4 === valVar.swVal4) {
+    AEE = ADE;
+  } else if (ADE.includes(valVar.validate4)) {
+    $(guessVar.lFour).css("background-color", "var(--yellow)");
+    let indexed = ADE.indexOf(valVar.validate4);
+    AEE = ADE.replace(ADE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFour).css("background-color", "var(--dkgrey)");
+    AEE = ADE;
+  }
+
+  if (valVar.validate5 === valVar.swVal5) {
+    AFE = AEE;
+  } else if (AEE.includes(valVar.validate5)) {
+    $(guessVar.lFive).css("background-color", "var(--yellow)");
+    let indexed = AEE.indexOf(valVar.validate5);
+    AFE = AEE.replace(AEE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFive).css("background-color", "var(--dkgrey)");
+    AFE = AEE;
+  }
+}
