@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Capriola&family=Titan+One&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&family=Nixie+One&display=swap');
 :root {
   --ltgrey: #d0d0d0;
   --red: #bf7373;
@@ -7,6 +7,7 @@
   --yellow: #ffdb4b;
   --dkgrey: #787878;
   --purple: #6666ff;
+  --blue: #348aa7;
   --title: #c4e9e0;
   --bg: #334447;
 }
@@ -26,7 +27,8 @@ body, input {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 70%;
+  min-width: 600px;
+  width: 40%;
 }
 #game-td {
   background-color: white;
@@ -38,15 +40,12 @@ body, input {
   margin-top: 0px;
 }
 #title {
-  font-family: 'Titan One', serif;
+  font-family: 'Titan One', sans-serif;
 	font-size: 4rem;
 	font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--title);
   margin: 1.5rem 0 5rem 0;
-}
-.letters:disabled {
-  color: black;
 }
 .guesses {
   text-align: center;
@@ -54,7 +53,7 @@ body, input {
 .guesses input {
   height: 4rem;
   width: 4rem;
-  border: none;
+  border: transparent;
   background-color: var(--ltgrey);
   margin: 0 3px 0 3px;
   text-align: center;
@@ -65,18 +64,90 @@ body, input {
   caret-color: transparent;
   background-color: transparent;
   position: absolute;
+  top: 400px;
+  left: -600px;
   border: none;
   color: transparent;
-  opacity: 0%;
-  z-index: 20;
+  opacity: 10%;
 }
 .letters {
   font-family: 'Nixie One', serif;
+  text-transorm: uppercase;
+}
+.letters:disabled {
+  color: black;
 }
 .val-check {
   position: absolute;
   opacity: 0;
 }
 #newWordd {
+  display: none!important;
+}
+#overlayA, #overlayB {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#notfound {
+  margin: auto;
+  padding-top: 30%;
+  width: 100%;
+  height: 80%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 4.5rem;
+  color: var(--red);
+}
+#winner {
+  margin: auto;
+  padding-top: 20%;
+  width: 100%;
+  height: 80%;
+  font-family: 'Titan One', sans-serif;
+  font-size: 7rem;
+  color: var(--blue);
+  text-shadow:
+    -1px -1px 0 #61e294,
+     0   -1px 0 #61e294,
+     1px -1px 0 #61e294,
+     1px  0   0 #61e294,
+     1px  1px 0 #61e294,
+     0    1px 0 #61e294,
+    -1px  1px 0 #61e294,
+    -1px  0   0 #61e294;
+}
+#sorry {
+  margin: auto;
+  padding-top: 20%;
+  width: 100%;
+  height: 80%;
+  font-family: 'Titan One', sans-serif;
+  font-size: 7rem;
+  color: var(--red);
+/*  text-shadow:
+    -1px -1px 0 #61e294,
+     0   -1px 0 #61e294,
+     1px -1px 0 #61e294,
+     1px  0   0 #61e294,
+     1px  1px 0 #61e294,
+     0    1px 0 #61e294,
+    -1px  1px 0 #61e294,
+    -1px  0   0 #61e294; */
+    background-color: rgba(256, 256, 256, 0.9);
+}
+#revealed {
+  font-family: 'Titan One', sans-serif;
+  font-size: 3rem;
+  color: var(--red);
+}
+#word {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 6rem;
+  color: black;
 }
