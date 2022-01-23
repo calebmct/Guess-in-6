@@ -78,10 +78,11 @@ body, input {
   border: none;
   color: transparent;
   opacity: 10%;
+  text-transform: uppercase;
 }
 .letters {
   font-family: 'Nixie One', serif;
-  text-transorm: uppercase;
+  text-transform: uppercase;
 }
 .letters:disabled {
   color: black;
