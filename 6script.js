@@ -68,6 +68,7 @@ $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the hig
 - refine CSS/styling
 - add favicon
 - add function to pass index # to url (at least to share) and pull from it to load that word
+- add a "Daily Challenge" that you can share the results of
 
 */
 
@@ -172,7 +173,7 @@ if (event.keyCode === 13 && $(this).val().length == 5) {
 });
 
 //Inputs typed letters into corresponding inputs displayed
-document.getElementById("A").addEventListener('keyup', getKeysA);
+document.getElementById("A").addEventListener("keyup", getKeysA);
 
 function getKeysA() {
   let uno = $("#A").val().charAt(0).toUpperCase();
@@ -180,6 +181,7 @@ function getKeysA() {
   let tres = $("#A").val().charAt(2).toUpperCase();
   let cuatro = $("#A").val().charAt(3).toUpperCase();
   let cinco = $("#A").val().charAt(4).toUpperCase();
+  console.log("getKeysA is running");
   $("#A1").val(uno);
   $("#A2").val(dos);
   $("#A3").val(tres);
@@ -187,7 +189,7 @@ function getKeysA() {
   $("#A5").val(cinco);
 }
 
-document.getElementById("B").addEventListener('keyup', getKeysB);
+document.getElementById("B").addEventListener("keyup", getKeysB);
 
 function getKeysB() {
   let uno = $("#B").val().charAt(0).toUpperCase();
@@ -202,7 +204,7 @@ function getKeysB() {
   $("#B5").val(cinco);
 }
 
-document.getElementById("C").addEventListener('keyup', getKeysC);
+document.getElementById("C").addEventListener("keyup", getKeysC);
 
 function getKeysC() {
   let uno = $("#C").val().charAt(0).toUpperCase();
