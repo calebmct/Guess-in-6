@@ -237,7 +237,6 @@ if ($("#A").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 
@@ -250,7 +249,6 @@ if ($("#B").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 $("#validateGuessC").click(function() {
@@ -262,7 +260,6 @@ if ($("#C").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 $("#validateGuessD").click(function() {
@@ -274,7 +271,6 @@ if ($("#D").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 $("#validateGuessE").click(function() {
@@ -286,7 +282,6 @@ if ($("#E").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 $("#validateGuessF").click(function() {
@@ -298,7 +293,6 @@ if ($("#F").val().length != 5) {
 	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
-  $(this).next("input").focus();
 }
 });
 //pops up "not a word" warning when guess doesn't match arrays
@@ -324,6 +318,7 @@ var eLen = $("#E").val().length;
 var fLen = $("#F").val().length;
 
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
+  $("#F").prop('disabled', false);
   return {
     guess: "#F",
     lOne: "#F1",
@@ -337,10 +332,10 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   }
 
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
-  $("#F").prop('disabled', false);
-  $("#F").focus();
+  $("#E").prop('disabled', false);
   return {
     guess: "#E",
+    next: "#F",
     lOne: "#E1",
     lTwo: "#E2",
     lThree: "#E3",
@@ -352,10 +347,10 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   }
 
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
-  $("#E").prop('disabled', false);
-  $("#E").focus();
+  $("#D").prop('disabled', false);
   return {
     guess: "#D",
+    next: "#E",
     lOne: "#D1",
     lTwo: "#D2",
     lThree: "#D3",
@@ -366,10 +361,10 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".fourth"
   }
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
-  $("#D").prop('disabled', false);
-  $("#D").focus();
+  $("#C").prop('disabled', false);
   return {
     guess: "#C",
+    next: "#D",
     lOne: "#C1",
     lTwo: "#C2",
     lThree: "#C3",
@@ -380,10 +375,10 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".third"
   }
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
-  $("#C").prop('disabled', false);
-  $("#C").focus();
+  $("#B").prop('disabled', false);
   return {
     guess: "#B",
+    next: "#C",
     lOne: "#B1",
     lTwo: "#B2",
     lThree: "#B3",
@@ -394,10 +389,10 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".second"
   };
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
-  $("#B").prop('disabled', false);
-  $("#B").focus();
+  $("#A").prop('disabled', false);
   return {
     guess: "#A",
+    next: "#B",
     lOne: "#A1",
     lTwo: "#A2",
     lThree: "#A3",
@@ -441,6 +436,7 @@ if (guessVar.lastGuess === true) {
   $(guessVar.valButton).prop('disabled', true);
   $(guessVar.guess).prop('disabled', true);
   $(guessVar.guessClass).prop('disabled', true);
+  $(next).focus();
 }
 //checks to see if entire word is correct
 if (gess === sw) {
