@@ -78,6 +78,7 @@ for (var i = 65; i <= 90; i++) {
 }
 if (jQuery.inArray(event.which, arr) === -1) {
   event.preventDefault();
+  console.log("typing only works with A-Z -function running");
 }
 });
 
