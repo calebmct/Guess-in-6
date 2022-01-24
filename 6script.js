@@ -13,15 +13,14 @@ function newSecretWord() {
 //JQuery ready functions
 $(document).ready(function() {
 newSecretWord();
-//document.getElementById("secretword").innerHTML = newSecretWord();
 
-function focusGuess () {
-  $(".guess").focus();
+function focusGuess() {
+	$(".guess").focus();
 }
 focusGuess();
 
 $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
-  $(".guess").selectionStart = $(".guess").selectionEnd;
+  $(this).selectionStart = $(this).selectionEnd;
 }, false);
 
 /*$(".guess").on("blur", function() {
@@ -48,28 +47,24 @@ $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the hig
 */
 
 $(".letters").click(function() {
-  $(".guess").focus();
-});
-
-$(".letters").keyup(function() {
-  $(".guess").focus();
+	$(".guess").focus();
 });
 
 //Only allow letters (and backspace) to by typed -- https://stackoverflow.com/questions/2980038/allow-text-box-only-for-letters-using-jquery
 $(".guess").on("keydown", function(event) {
-var arr = [8];
-for (var i = 65; i <= 90; i++) {
-  arr.push(i);
-}
-if (jQuery.inArray(event.which, arr) === -1) {
-  event.preventDefault();
-  console.log("typing only works with A-Z -function running");
-}
+  var arr = [8];
+  for (var i = 65; i <= 90; i++) {
+    arr.push(i);
+  }
+  if (jQuery.inArray(event.which, arr) === -1) {
+    event.preventDefault();
+    console.log("typing only works with A-Z -function running");
+  }
 });
 
 //Only allow letters to be pasted
 $(".guess").on("input", function() {
-var regexp = "";
+var regexp = /[^a-zA-Z]/g;
 if ($(this).val().match(regexp)) {
   $(this).val($(this).val().replace(regexp, ''));
 }
@@ -115,42 +110,36 @@ $("#A").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessA").click();
-  focusGuess();
 }
 });
 $("#B").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessB").click();
-  $(".guess").focus();
 }
 });
 $("#C").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessC").click();
-  $(".guess").focus();
 }
 });
 $("#D").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessD").click();
-  $(".guess").focus();
 }
 });
 $("#E").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessE").click();
-  $(".guess").focus();
 }
 });
 $("#F").keyup(function(event) {
 if (event.keyCode === 13 && $(this).val().length == 5) {
   event.preventDefault();
   document.getElementById("validateGuessF").click();
-  $(".guess").focus();
 }
 });
 
@@ -162,6 +151,7 @@ $("#A").keyup(function() {
   let tres = $("#A").val().charAt(2).toUpperCase();
   let cuatro = $("#A").val().charAt(3).toUpperCase();
   let cinco = $("#A").val().charAt(4).toUpperCase();
+  console.log("getKeysA is running");
   $("#A1").val(uno);
   $("#A2").val(dos);
   $("#A3").val(tres);
@@ -244,8 +234,10 @@ if ($("#A").val().length != 5) {
 	notAWord();
   return false;
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 
@@ -255,8 +247,10 @@ if ($("#B").val().length != 5) {
 } else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
   notAWord();
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 $("#validateGuessC").click(function() {
@@ -265,8 +259,10 @@ if ($("#C").val().length != 5) {
 } else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
   notAWord();
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 $("#validateGuessD").click(function() {
@@ -275,8 +271,10 @@ if ($("#D").val().length != 5) {
 } else if (!shhh.includes($("#D").val().toLowerCase()) && !ghhh.includes($("#D").val().toLowerCase())) {
   notAWord();
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 $("#validateGuessE").click(function() {
@@ -285,8 +283,10 @@ if ($("#E").val().length != 5) {
 } else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
   notAWord();
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 $("#validateGuessF").click(function() {
@@ -295,8 +295,10 @@ if ($("#F").val().length != 5) {
 } else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
   notAWord();
 } else {
+	document.getElementById("overlayA").style.display = "none";
   validateHit();
   validateGuess();
+  $(this).next("input").focus();
 }
 });
 //pops up "not a word" warning when guess doesn't match arrays
