@@ -55,8 +55,8 @@ body, input {
   text-align: center;
 }
 .guesses input {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   border: transparent;
   background-color: var(--ltgrey);
   margin: 0 3px 0 3px;

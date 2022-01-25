@@ -434,13 +434,13 @@ function validateGuess() {
   var gess = $(guessVar.guess).val().toUpperCase();
   //disables all inputs and buttons on last guess
   if (guessVar.lastGuess === true) {
-    $("input").prop("disabled", "true");
-    $(".val-check").prop("disabled", "true");
+    $("input").attr('disabled','disabled');
+    $(".val-check").attr('disabled','disabled');
   } else {
-    $(guessVar.valButton).prop("disabled", "true");
+    $(guessVar.valButton).attr('disabled','disabled');
     $(guessVar.guess).attr('disabled','disabled');
     $(guessVar.nextG).removeAttr('disabled');
-    $(guessVar.guessClass).prop("disabled", "true");
+    $(guessVar.guessClass).attr('disabled','disabled');
   }
   //checks to see if entire word is correct
     if (gess === sw) {
@@ -540,7 +540,7 @@ function validateYellow(e) {
     $(guessVar.lFive).css("background-color", "var(--dkgrey)");
     AFE = AEE;
   }
-  $("input"+guessVar.nextG).focus(); /* $(guessVar.nextG).focus(); */
+  $("'input'"+guessVar.nextG).focus(); /* $(guessVar.nextG).focus(); */
   if (guessVar.lastGuess === true) {
     sorry();
   }
