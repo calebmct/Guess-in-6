@@ -544,9 +544,7 @@ if (valVar.validate5 === valVar.swVal5) {
   $(guessVar.lFive).css("background-color", "var(--dkgrey)");
   AFE = AEE;
  }
-  setTimeout(function(){
-    $(".guess").focus();
-  }, 100);
+  setTimeout(focusGuess(),100);
 }
 function win() {
   document.getElementById("overlayB").style.display = "block";
