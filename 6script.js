@@ -25,7 +25,7 @@ $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the hig
 }, false);
 */
 
-/*$(".guess").on("blur", function() {
+$(".guess").on("blur", function() {
   var blurInput = $(this);
   setTimeout(function() {
     blurInput.focus()
