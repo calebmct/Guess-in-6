@@ -442,7 +442,6 @@ function validateGuess() {
     $(guessVar.nextG).prop('disabled', false);
     $(guessVar.guessClass).prop('disabled', true);
     $(guessVar.nextG).prop('disabled', false);
-    $(".letters").focus();
 }
 //checks to see if entire word is correct
 if (gess === sw) {
