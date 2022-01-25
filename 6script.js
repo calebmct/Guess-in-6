@@ -343,7 +343,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
   return {
     guess: "#E",
-    nextG: "#F",
+    nextG: ".sixth",
     lOne: "#E1",
     lTwo: "#E2",
     lThree: "#E3",
@@ -357,7 +357,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
   return {
     guess: "#D",
-    nextG: "#E",
+    nextG: ".fifth",
     lOne: "#D1",
     lTwo: "#D2",
     lThree: "#D3",
@@ -370,7 +370,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
   return {
     guess: "#C",
-    nextG: "#D",
+    nextG: ".fourth",
     lOne: "#C1",
     lTwo: "#C2",
     lThree: "#C3",
@@ -383,7 +383,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
   return {
     guess: "#B",
-    nextG: "#C",
+    nextG: "#.third",
     lOne: "#B1",
     lTwo: "#B2",
     lThree: "#B3",
@@ -396,7 +396,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
   return {
     guess: "#A",
-    nextG: "#B",
+    nextG: ".second",
     lOne: "#A1",
     lTwo: "#A2",
     lThree: "#A3",
@@ -440,6 +440,7 @@ function validateGuess() {
     $(guessVar.guess).prop('disabled', true);
     $(guessVar.nextG).prop('disabled', false);
     $(guessVar.guessClass).prop('disabled', true);
+    $(guessVar.nextG).prop('disabled', false);
 }
 //checks to see if entire word is correct
 if (gess === sw) {
