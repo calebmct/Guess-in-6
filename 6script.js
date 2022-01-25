@@ -30,7 +30,7 @@ $(".guess").on("blur", function() {
   setTimeout(function() {
     blurInput.focus()
   }, 10);
-
+});
 // TO DO LIST //
 /*
 - no "select all" function
