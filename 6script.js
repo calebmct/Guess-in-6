@@ -29,7 +29,7 @@ $(".guess").on("blur", function() {
   var blurInput = $(this);
   setTimeout(function() {
     blurInput.focus()
-  }, 10);*/
+  }, 10);
 
 // TO DO LIST //
 /*
