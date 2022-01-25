@@ -335,7 +335,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   $("#E").prop('disabled', false);
   return {
     guess: "#E",
-    next: "#F",
+    nextG: "#F",
     lOne: "#E1",
     lTwo: "#E2",
     lThree: "#E3",
@@ -350,7 +350,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   $("#D").prop('disabled', false);
   return {
     guess: "#D",
-    next: "#E",
+    nextG: "#E",
     lOne: "#D1",
     lTwo: "#D2",
     lThree: "#D3",
@@ -364,7 +364,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   $("#C").prop('disabled', false);
   return {
     guess: "#C",
-    next: "#D",
+    nextG: "#D",
     lOne: "#C1",
     lTwo: "#C2",
     lThree: "#C3",
@@ -378,7 +378,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   $("#B").prop('disabled', false);
   return {
     guess: "#B",
-    next: "#C",
+    nextG: "#C",
     lOne: "#B1",
     lTwo: "#B2",
     lThree: "#B3",
@@ -392,7 +392,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   $("#A").prop('disabled', false);
   return {
     guess: "#A",
-    next: "#B",
+    nextG: "#B",
     lOne: "#A1",
     lTwo: "#A2",
     lThree: "#A3",
@@ -436,7 +436,7 @@ if (guessVar.lastGuess === true) {
   $(guessVar.valButton).prop('disabled', true);
   $(guessVar.guess).prop('disabled', true);
   $(guessVar.guessClass).prop('disabled', true);
-  $(next).focus();
+  $(guessVar.nextG).focus();
 }
 //checks to see if entire word is correct
 if (gess === sw) {
