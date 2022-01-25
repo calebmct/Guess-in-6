@@ -545,7 +545,7 @@ function validateYellow(e) {
     AFE = AEE;
   }
   setTimeout(function() {
-    $(guessVar.nextG).focus();
+    $(':input:enabled:visible:first').focus(); /* $(guessVar.nextG).focus(); */
   },100);
   if (guessVar.lastGuess === true) {
     sorry();
