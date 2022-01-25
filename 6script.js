@@ -13,12 +13,12 @@ function newSecretWord() {
 //JQuery ready functions
 $(document).ready(function() {
 newSecretWord();
-/*
+
 function focusGuess() {
 	$(".guess").focus();
 }
 focusGuess();
-*/
+
 /*
 $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
   $(this).selectionStart = $(this).selectionEnd;
