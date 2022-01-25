@@ -45,7 +45,7 @@ $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the hig
 - add a "Daily Challenge" that you can share the results of
 
 */
-
+//Focuses guess input when letters are clicked on
 $(".letters").click(function() {
 	$(".guess").focus();
 });
@@ -58,7 +58,6 @@ $(".guess").on("keydown", function(event) {
   }
   if (jQuery.inArray(event.which, arr) === -1) {
     event.preventDefault();
-    console.log("typing only works with A-Z -function running");
   }
 });
 
@@ -224,74 +223,86 @@ $("#F").keyup(function() {
   $("#F5").val(cinco);
 });
 
-//Validation when submitting answers
+//Validation of 5 letters and if they're actual words when submitting answers
 
 $("#validateGuessA").click(function() {
-if ($("#A").val().length != 5) {
+if ($("#A").val().length != 5 && $("#A5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#A").val().toLowerCase()) && !ghhh.includes($("#A").val().toLowerCase())) {
 	notAWord();
   return false;
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	etTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 
 $("#validateGuessB").click(function() {
-if ($("#B").val().length != 5) {
+if ($("#B").val().length != 5 && $("#B5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
   notAWord();
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	etTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 $("#validateGuessC").click(function() {
-if ($("#C").val().length != 5) {
+if ($("#C").val().length != 5 && $("#C5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
   notAWord();
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	etTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 $("#validateGuessD").click(function() {
-if ($("#D").val().length != 5) {
+if ($("#D").val().length != 5 && $("#D5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#D").val().toLowerCase()) && !ghhh.includes($("#D").val().toLowerCase())) {
   notAWord();
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	setTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 $("#validateGuessE").click(function() {
-if ($("#E").val().length != 5) {
+if ($("#E").val().length != 5 && $("#E5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
   notAWord();
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	etTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 $("#validateGuessF").click(function() {
-if ($("#F").val().length != 5) {
+if ($("#F").val().length != 5 && $("#F5").val().length == 1 ) {
   return false;
 } else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
   notAWord();
 } else {
-	document.getElementById("overlayA").style.display = "none";
-  validateHit();
-  validateGuess();
+	etTimeout(function(){
+    document.getElementById("overlayA").style.display = "none";
+    validateHit();
+    validateGuess()
+  },100);
 }
 });
 //pops up "not a word" warning when guess doesn't match arrays
@@ -416,20 +427,22 @@ return {
 }
 
 function validateGuess() {
-var guessVar = validateHit();
-var valVar = validVars();
-var gess = $(guessVar.guess).val().toUpperCase();
-//disables all inputs and buttons on last guess
-if (guessVar.lastGuess === true) {
-  $("input").prop('disabled', true);
-  $(".val-check").prop('disabled', true);
-  sorry();
-} else {
-  $(guessVar.valButton).prop('disabled', true);
-  $(guessVar.guess).prop('disabled', true);
-  $(guessVar.guessClass).prop('disabled', true);
-  $(guessVar.nextG).prop('disabled', false);
-  $(guessVar.nextG).focus();
+  var guessVar = validateHit();
+  var valVar = validVars();
+  var gess = $(guessVar.guess).val().toUpperCase();
+  //disables all inputs and buttons on last guess
+  if (guessVar.lastGuess === true) {
+    $("input").prop('disabled', true);
+    $(".val-check").prop('disabled', true);
+    sorry();
+  } else {
+    $(guessVar.valButton).prop('disabled', true);
+    $(guessVar.guess).prop('disabled', true);
+    $(guessVar.nextG).prop('disabled', false);
+    $(guessVar.guessClass).prop('disabled', true);
+    setTimeout(function(){
+      $(guessVar.nextG).focus();
+    }, 100);
 }
 //checks to see if entire word is correct
 if (gess === sw) {
