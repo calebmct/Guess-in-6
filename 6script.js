@@ -151,7 +151,6 @@ $("#A").keyup(function() {
   let tres = $("#A").val().charAt(2).toUpperCase();
   let cuatro = $("#A").val().charAt(3).toUpperCase();
   let cinco = $("#A").val().charAt(4).toUpperCase();
-  console.log("getKeysA is running");
   $("#A1").val(uno);
   $("#A2").val(dos);
   $("#A3").val(tres);
@@ -318,7 +317,6 @@ var eLen = $("#E").val().length;
 var fLen = $("#F").val().length;
 
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
-  $("#F").prop('disabled', false);
   return {
     guess: "#F",
     lOne: "#F1",
@@ -332,7 +330,6 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   }
 
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
-  $("#E").prop('disabled', false);
   return {
     guess: "#E",
     nextG: "#F",
@@ -347,7 +344,6 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   }
 
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
-  $("#D").prop('disabled', false);
   return {
     guess: "#D",
     nextG: "#E",
@@ -361,7 +357,6 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".fourth"
   }
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
-  $("#C").prop('disabled', false);
   return {
     guess: "#C",
     nextG: "#D",
@@ -375,7 +370,6 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".third"
   }
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
-  $("#B").prop('disabled', false);
   return {
     guess: "#B",
     nextG: "#C",
@@ -389,7 +383,6 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
     guessClass: ".second"
   };
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
-  $("#A").prop('disabled', false);
   return {
     guess: "#A",
     nextG: "#B",
@@ -426,7 +419,6 @@ function validateGuess() {
 var guessVar = validateHit();
 var valVar = validVars();
 var gess = $(guessVar.guess).val().toUpperCase();
-var gass = $(guessVar.guess).val().toLowerCase();
 //disables all inputs and buttons on last guess
 if (guessVar.lastGuess === true) {
   $("input").prop('disabled', true);

@@ -32,7 +32,7 @@ body, input {
   z-index: 10;
 }
 #game-td {
-  background-color: white;
+  background-color: grey;
   text-align: center;
   width: 100%;
 }
@@ -76,12 +76,12 @@ body, input {
   left: 0;
   border: none;
   color: black;
-  opacity: 10%;
+  opacity: 0%;
   z-index: 0;
 }
 .letters {
   font-family: 'Nixie One', serif;
-  text-transorm: uppercase;
+  text-transform: uppercase;
 }
 .letters:disabled {
   color: black;
