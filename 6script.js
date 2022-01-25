@@ -544,9 +544,7 @@ function validateYellow(e) {
     $(guessVar.lFive).css("background-color", "var(--dkgrey)");
     AFE = AEE;
   }
-  setTimeout(function() {
-    $(':input:enabled:visible:first').active(); /* $(guessVar.nextG).focus(); */
-  },100);
+  $(':input:enabled:visible:not([disabled]):first').focus(); /* $(guessVar.nextG).focus(); */
   if (guessVar.lastGuess === true) {
     sorry();
   }
@@ -559,7 +557,7 @@ function win() {
 }
 function sorry() {
 	document.getElementById("overlayB").style.display = "block";
-  document.getElementById("overlayB").innerHTML = "<div id='sorry'><br/>sorry.<div id='revealed'>the correct answer was<div id='word'>" + sw + "</div></div></div>";
+  document.getElementById("overlayB").innerHTML = "<div id='sorry'><br/>sorry.<div id='revealed'>the correct answer was<div id='word'>"+sw+"</div></div></div>";
   $("input").prop('disabled', true);
   $(".val-check").prop('disabled', true);
 }
