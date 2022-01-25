@@ -440,9 +440,6 @@ function validateGuess() {
     $(guessVar.guess).prop('disabled', true);
     $(guessVar.nextG).prop('disabled', false);
     $(guessVar.guessClass).prop('disabled', true);
-    setTimeout(function(){
-      $(".guess").focus();
-    }, 100);
 }
 //checks to see if entire word is correct
 if (gess === sw) {
@@ -547,6 +544,9 @@ if (valVar.validate5 === valVar.swVal5) {
   $(guessVar.lFive).css("background-color", "var(--dkgrey)");
   AFE = AEE;
  }
+  setTimeout(function(){
+    $(".guess").focus();
+  }, 100);
 }
 function win() {
   document.getElementById("overlayB").style.display = "block";
