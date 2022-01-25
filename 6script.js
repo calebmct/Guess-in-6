@@ -232,7 +232,7 @@ if ($("#A").val().length != 5 && $("#A5").val().length == 1 ) {
 	notAWord();
   return false;
 } else {
-	etTimeout(function(){
+	setTimeout(function(){
     document.getElementById("overlayA").style.display = "none";
     validateHit();
     validateGuess()
@@ -246,7 +246,7 @@ if ($("#B").val().length != 5 && $("#B5").val().length == 1 ) {
 } else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
   notAWord();
 } else {
-	etTimeout(function(){
+	setTimeout(function(){
     document.getElementById("overlayA").style.display = "none";
     validateHit();
     validateGuess()
@@ -259,7 +259,7 @@ if ($("#C").val().length != 5 && $("#C5").val().length == 1 ) {
 } else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
   notAWord();
 } else {
-	etTimeout(function(){
+	setTimeout(function(){
     document.getElementById("overlayA").style.display = "none";
     validateHit();
     validateGuess()
@@ -285,7 +285,7 @@ if ($("#E").val().length != 5 && $("#E5").val().length == 1 ) {
 } else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
   notAWord();
 } else {
-	etTimeout(function(){
+	setTimeout(function(){
     document.getElementById("overlayA").style.display = "none";
     validateHit();
     validateGuess()
@@ -298,7 +298,7 @@ if ($("#F").val().length != 5 && $("#F5").val().length == 1 ) {
 } else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
   notAWord();
 } else {
-	etTimeout(function(){
+	setTimeout(function(){
     document.getElementById("overlayA").style.display = "none";
     validateHit();
     validateGuess()
