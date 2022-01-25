@@ -428,6 +428,7 @@ if (guessVar.lastGuess === true) {
   $(guessVar.valButton).prop('disabled', true);
   $(guessVar.guess).prop('disabled', true);
   $(guessVar.guessClass).prop('disabled', true);
+  $(guessVar.nextG).prop('disabled', false);
   $(guessVar.nextG).focus();
 }
 //checks to see if entire word is correct
