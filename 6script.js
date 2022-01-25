@@ -544,7 +544,7 @@ function validateYellow(e) {
     $(guessVar.lFive).css("background-color", "var(--dkgrey)");
     AFE = AEE;
   }
-  $(':input:enabled:visible:not([disabled]):first').focus(); /* $(guessVar.nextG).focus(); */
+  $("input"+guessVar.nextG).focus(); /* $(guessVar.nextG).focus(); */
   if (guessVar.lastGuess === true) {
     sorry();
   }
