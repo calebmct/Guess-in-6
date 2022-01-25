@@ -32,7 +32,7 @@ body, input {
   z-index: 10;
 }
 #game-td {
-  background-color: white;
+  background-color: var(--red);
   text-align: center;
   width: 100%;
 }

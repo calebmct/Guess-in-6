@@ -441,7 +441,7 @@ function validateGuess() {
     $(guessVar.nextG).prop('disabled', false);
     $(guessVar.guessClass).prop('disabled', true);
     setTimeout(function(){
-      $(guessVar.nextG).focus();
+      $(".guess").focus();
     }, 100);
 }
 //checks to see if entire word is correct
