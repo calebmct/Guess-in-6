@@ -434,21 +434,17 @@ function validateGuess() {
   var gess = $(guessVar.guess).val().toUpperCase();
   //disables all inputs and buttons on last guess
   if (guessVar.lastGuess === true) {
-    $("input").prop('disabled', true);
-    $(".val-check").prop('disabled', true);
+    $("input").prop("disabled", "true");
+    $(".val-check").prop("disabled", "true");
   } else {
-    $(guessVar.valButton).prop('disabled', true);
-    $(guessVar.guess).prop('disabled', true);
-    $(guessVar.nextG).prop('disabled', false);
-    $(guessVar.guessClass).prop('disabled', true);
+    $(guessVar.valButton).prop("disabled", "true");
+    $(guessVar.guess).attr('disabled','disabled');
+    $(guessVar.nextG).removeAttr('disabled');
+    $(guessVar.guessClass).prop("disabled", "true");
   }
   //checks to see if entire word is correct
     if (gess === sw) {
-      $(guessVar.lOne).css("background-color", "var(--green)");
-      $(guessVar.lTwo).css("background-color", "var(--green)");
-      $(guessVar.lThree).css("background-color", "var(--green)");
-      $(guessVar.lFour).css("background-color", "var(--green)");
-      $(guessVar.lFive).css("background-color", "var(--green)");
+      $(guessVar.guessClass).css("background-color", "var(--green)");
       win();
     } else {
     //initial check for correct letters in correct placements
