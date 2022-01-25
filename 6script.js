@@ -331,6 +331,7 @@ var fLen = $("#F").val().length;
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   return {
     guess: "#F",
+    nextG: false,
     lOne: "#F1",
     lTwo: "#F2",
     lThree: "#F3",
@@ -344,7 +345,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
   return {
     guess: "#E",
-    nextG: ".sixth",
+    nextG: "#F",
     lOne: "#E1",
     lTwo: "#E2",
     lThree: "#E3",
@@ -358,7 +359,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
   return {
     guess: "#D",
-    nextG: ".fifth",
+    nextG: "#E",
     lOne: "#D1",
     lTwo: "#D2",
     lThree: "#D3",
@@ -371,7 +372,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
   return {
     guess: "#C",
-    nextG: ".fourth",
+    nextG: "#D",
     lOne: "#C1",
     lTwo: "#C2",
     lThree: "#C3",
@@ -384,7 +385,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
   return {
     guess: "#B",
-    nextG: "#.third",
+    nextG: "#C",
     lOne: "#B1",
     lTwo: "#B2",
     lThree: "#B3",
@@ -397,7 +398,7 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 } else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
   return {
     guess: "#A",
-    nextG: ".second",
+    nextG: "#B",
     lOne: "#A1",
     lTwo: "#A2",
     lThree: "#A3",
@@ -412,19 +413,19 @@ if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
 
 
 function validVars() {
-var guesses = validateHit();
-return {
-  validate1: $(guesses.lOne).val(),
-  validate2: $(guesses.lTwo).val(),
-  validate3: $(guesses.lThree).val(),
-  validate4: $(guesses.lFour).val(),
-  validate5: $(guesses.lFive).val(),
-  swVal1: sw.charAt(0),
-  swVal2: sw.charAt(1),
-  swVal3: sw.charAt(2),
-  swVal4: sw.charAt(3),
-  swVal5: sw.charAt(4)
-}
+  var guesses = validateHit();
+  return {
+    validate1: $(guesses.lOne).val(),
+    validate2: $(guesses.lTwo).val(),
+    validate3: $(guesses.lThree).val(),
+    validate4: $(guesses.lFour).val(),
+    validate5: $(guesses.lFive).val(),
+    swVal1: sw.charAt(0),
+    swVal2: sw.charAt(1),
+    swVal3: sw.charAt(2),
+    swVal4: sw.charAt(3),
+    swVal5: sw.charAt(4)
+  }
 }
 
 function validateGuess() {
@@ -435,120 +436,120 @@ function validateGuess() {
   if (guessVar.lastGuess === true) {
     $("input").prop('disabled', true);
     $(".val-check").prop('disabled', true);
-    sorry();
   } else {
     $(guessVar.valButton).prop('disabled', true);
     $(guessVar.guess).prop('disabled', true);
     $(guessVar.nextG).prop('disabled', false);
     $(guessVar.guessClass).prop('disabled', true);
-    $(guessVar.nextG).prop('disabled', false);
-}
-//checks to see if entire word is correct
-if (gess === sw) {
-  $(guessVar.lOne).css("background-color", "var(--green)");
-  $(guessVar.lTwo).css("background-color", "var(--green)");
-  $(guessVar.lThree).css("background-color", "var(--green)");
-  $(guessVar.lFour).css("background-color", "var(--green)");
-  $(guessVar.lFive).css("background-color", "var(--green)");
-  win();
-} else {
-//initial check for correct letters in correct placements
-if (valVar.validate1 === valVar.swVal1) {
-  AAA = "";
-  $(guessVar.lOne).css("background-color", "var(--green)");
-} else {
-  AAA = valVar.swVal1;
-}
-if (valVar.validate2 === valVar.swVal2) {
-  AAB = "";
-  $(guessVar.lTwo).css("background-color", "var(--green)");
-} else {
-  AAB = valVar.swVal2;
-}
-if (valVar.validate3 === valVar.swVal3) {
-  AAC = "";
-  $(guessVar.lThree).css("background-color", "var(--green)");
-} else {
-  AAC = valVar.swVal3;
-}
-if (valVar.validate4 === valVar.swVal4) {
-  AAD = "";
-  $(guessVar.lFour).css("background-color", "var(--green)");
-} else {
-  AAD = valVar.swVal4;
-}
-if (valVar.validate5 === valVar.swVal5) {
-  AAE = AAA + AAB + AAC + AAD;
-  $(guessVar.lFive).css("background-color", "var(--green)");
-} else {
-  AAE = AAA + AAB + AAC + AAD + valVar.swVal5;
-}
-
-validateYellow(AAE);
-}
+  }
+  //checks to see if entire word is correct
+    if (gess === sw) {
+      $(guessVar.lOne).css("background-color", "var(--green)");
+      $(guessVar.lTwo).css("background-color", "var(--green)");
+      $(guessVar.lThree).css("background-color", "var(--green)");
+      $(guessVar.lFour).css("background-color", "var(--green)");
+      $(guessVar.lFive).css("background-color", "var(--green)");
+      win();
+    } else {
+    //initial check for correct letters in correct placements
+    if (valVar.validate1 === valVar.swVal1) {
+      AAA = "";
+      $(guessVar.lOne).css("background-color", "var(--green)");
+    } else {
+      AAA = valVar.swVal1;
+    }
+    if (valVar.validate2 === valVar.swVal2) {
+      AAB = "";
+      $(guessVar.lTwo).css("background-color", "var(--green)");
+    } else {
+      AAB = valVar.swVal2;
+    }
+    if (valVar.validate3 === valVar.swVal3) {
+      AAC = "";
+      $(guessVar.lThree).css("background-color", "var(--green)");
+    } else {
+      AAC = valVar.swVal3;
+    }
+    if (valVar.validate4 === valVar.swVal4) {
+      AAD = "";
+      $(guessVar.lFour).css("background-color", "var(--green)");
+    } else {
+      AAD = valVar.swVal4;
+    }
+    if (valVar.validate5 === valVar.swVal5) {
+      AAE = AAA + AAB + AAC + AAD;
+      $(guessVar.lFive).css("background-color", "var(--green)");
+    } else {
+      AAE = AAA + AAB + AAC + AAD + valVar.swVal5;
+    }
+    validateYellow(AAE);
+  }
 }
 
 function validateYellow(e) {
-var lastPass = e;
-var guessVar = validateHit();
-var valVar = validVars();
-if (valVar.validate1 === valVar.swVal1) {
-  ABE = lastPass;
-} else if (lastPass.includes(valVar.validate1)) {
-  $(guessVar.lOne).css("background-color", "var(--yellow)");
-  let indexed = lastPass.indexOf(valVar.validate1);
-  ABE = lastPass.replace(lastPass.charAt(indexed), "");
-} else {
-  $(guessVar.lOne).css("background-color", "var(--dkgrey)");
-  ABE = lastPass;
-}
+  var lastPass = e;
+  var guessVar = validateHit();
+  var valVar = validVars();
+  if (valVar.validate1 === valVar.swVal1) {
+    ABE = lastPass;
+  } else if (lastPass.includes(valVar.validate1)) {
+    $(guessVar.lOne).css("background-color", "var(--yellow)");
+    let indexed = lastPass.indexOf(valVar.validate1);
+    ABE = lastPass.replace(lastPass.charAt(indexed), "");
+  } else {
+    $(guessVar.lOne).css("background-color", "var(--dkgrey)");
+    ABE = lastPass;
+  }
 
-if (valVar.validate2 === valVar.swVal2) {
-  ACE = ABE;
-} else if (ABE.includes(valVar.validate2)) {
-  $(guessVar.lTwo).css("background-color", "var(--yellow)");
-  let indexed = ABE.indexOf(valVar.validate2);
-  ACE = ABE.replace(ABE.charAt(indexed), "");
-} else {
-  $(guessVar.lTwo).css("background-color", "var(--dkgrey)");
-  ACE = ABE;
-}
+  if (valVar.validate2 === valVar.swVal2) {
+    ACE = ABE;
+  } else if (ABE.includes(valVar.validate2)) {
+    $(guessVar.lTwo).css("background-color", "var(--yellow)");
+    let indexed = ABE.indexOf(valVar.validate2);
+    ACE = ABE.replace(ABE.charAt(indexed), "");
+  } else {
+    $(guessVar.lTwo).css("background-color", "var(--dkgrey)");
+    ACE = ABE;
+  }
 
-if (valVar.validate3 === valVar.swVal3) {
-  ADE = ACE;
-} else if (ACE.includes(valVar.validate3)) {
-  $(guessVar.lThree).css("background-color", "var(--yellow)");
-  let indexed = ACE.indexOf(valVar.validate3);
-  ADE = ACE.replace(ACE.charAt(indexed), "");
-} else {
-  $(guessVar.lThree).css("background-color", "var(--dkgrey)");
-  ADE = ACE;
-}
+  if (valVar.validate3 === valVar.swVal3) {
+    ADE = ACE;
+  } else if (ACE.includes(valVar.validate3)) {
+    $(guessVar.lThree).css("background-color", "var(--yellow)");
+    let indexed = ACE.indexOf(valVar.validate3);
+    ADE = ACE.replace(ACE.charAt(indexed), "");
+  } else {
+    $(guessVar.lThree).css("background-color", "var(--dkgrey)");
+    ADE = ACE;
+  }
 
-if (valVar.validate4 === valVar.swVal4) {
-  AEE = ADE;
-} else if (ADE.includes(valVar.validate4)) {
-  $(guessVar.lFour).css("background-color", "var(--yellow)");
-  let indexed = ADE.indexOf(valVar.validate4);
-  AEE = ADE.replace(ADE.charAt(indexed), "");
-} else {
-  $(guessVar.lFour).css("background-color", "var(--dkgrey)");
-  AEE = ADE;
-}
+  if (valVar.validate4 === valVar.swVal4) {
+    AEE = ADE;
+  } else if (ADE.includes(valVar.validate4)) {
+    $(guessVar.lFour).css("background-color", "var(--yellow)");
+    let indexed = ADE.indexOf(valVar.validate4);
+    AEE = ADE.replace(ADE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFour).css("background-color", "var(--dkgrey)");
+    AEE = ADE;
+  }
 
-if (valVar.validate5 === valVar.swVal5) {
-  AFE = AEE;
-} else if (AEE.includes(valVar.validate5)) {
-  $(guessVar.lFive).css("background-color", "var(--yellow)");
-  let indexed = AEE.indexOf(valVar.validate5);
-  AFE = AEE.replace(AEE.charAt(indexed), "");
-} else {
-  $(guessVar.lFive).css("background-color", "var(--dkgrey)");
-  AFE = AEE;
- }
+  if (valVar.validate5 === valVar.swVal5) {
+    AFE = AEE;
+  } else if (AEE.includes(valVar.validate5)) {
+    $(guessVar.lFive).css("background-color", "var(--yellow)");
+    let indexed = AEE.indexOf(valVar.validate5);
+    AFE = AEE.replace(AEE.charAt(indexed), "");
+  } else {
+    $(guessVar.lFive).css("background-color", "var(--dkgrey)");
+    AFE = AEE;
+  }
   setTimeout(function() {
-    $(".guess").focus();
+    $(guessVar.nextG).focus();
   },100);
+  if (guessVar.lastGuess === true) {
+    sorry();
+  }
 }
 function win() {
   document.getElementById("overlayB").style.display = "block";
@@ -562,8 +563,8 @@ function sorry() {
   $("input").prop('disabled', true);
   $(".val-check").prop('disabled', true);
 }
+// Put all jquery above this //
+});
 function reset() {
 	location.reload;
 }
-// Put all jquery above this //
-});
