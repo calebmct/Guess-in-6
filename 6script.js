@@ -18,10 +18,11 @@ function focusGuess() {
 	$(".guess").focus();
 }
 focusGuess();
-
+/*
 $(".guess").on("select", function() { //NOT WORKING - needs to NOT allow the highlight function. Not sure if syntax is correct
   $(this).selectionStart = $(this).selectionEnd;
 }, false);
+*/
 
 /*$(".guess").on("blur", function() {
   var blurInput = $(this);
