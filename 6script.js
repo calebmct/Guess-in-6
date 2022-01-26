@@ -323,36 +323,41 @@ if (event.keyCode === 8) {
 
 function validateHit() {
 var aLen = $("#A").val().length;
-var bLen = function() {try {
-  if (isNaN(document.getElementById("B").innerHTML)) throw 0;
-  } else {
+var bLen = function() {
+  try {
+    document.getElementById("B").innerHTML.length;
+  } catch {
     return $("#B").val().length;
   }
-};
-var cLen = function() {try {
-  if (isNaN(document.getElementById("C").innerHTML)) throw 0;
-  } else {
+}
+var cLen = function() {
+  try {
+    document.getElementById("C").innerHTML.length;
+  } catch {
     return $("#C").val().length;
   }
-};
-var dLen = function() {try {
-  if (isNaN(document.getElementById("D").innerHTML)) throw 0;
-  } else {
+}
+var dLen = function() {
+  try {
+    document.getElementById("D").innerHTML.length;
+  } catch {
     return $("#D").val().length;
   }
-};
-var bLen = function() {try {
-  if (isNaN(document.getElementById("E").innerHTML)) throw 0;
-  } else {
+}
+var eLen = function() {
+  try {
+    document.getElementById("E").innerHTML.length;
+  } catch {
     return $("#E").val().length;
   }
-};
-var bLen = function() {try {
-  if (isNaN(document.getElementById("F").innerHTML)) throw 0;
-  } else {
+}
+var fLen = function() {
+  try {
+    document.getElementById("F").innerHTML.length;
+  } catch {
     return $("#F").val().length;
   }
-};
+}
 console.log(bLen);
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   return {
