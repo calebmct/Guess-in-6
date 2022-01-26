@@ -358,8 +358,8 @@ var fLen = function() {
     return $("#F").val().length;
   }
 };
-console.log(bLen);
-if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
+console.log(bLen());
+if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
   return {
     guess: "#F",
     nextG: false,
