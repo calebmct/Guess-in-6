@@ -440,7 +440,7 @@ function validateGuess() {
   } else {
     $(guessVar.valButton).attr('disabled','disabled');
     $(guessVar.guess).attr('disabled','disabled');
-    $(guessVar.nextG).removeAttr('disabled');
+/*    $(guessVar.nextG).removeAttr('disabled'); */
     $(guessVar.guessClass).attr('disabled','disabled');
   }
   //checks to see if entire word is correct
@@ -541,7 +541,10 @@ function validateYellow(e) {
     $(guessVar.lFive).css("background-color", "var(--dkgrey)");
     AFE = AEE;
   }
-  $("'input'"+guessVar.nextG).focus(); /* $(guessVar.nextG).focus(); */
+  /* $("input"+guessVar.nextG).focus(); $(guessVar.nextG).focus(); */
+  $(guessVar.guess).before('<input class="guess" id='+guessVar.nextG+' type="text" maxlength="5" autocomplete="off" spellcheck="false"/>');
+  $('#guess').focus();
+
   if (guessVar.lastGuess === true) {
     sorry();
   }
