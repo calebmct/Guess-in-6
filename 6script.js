@@ -327,35 +327,35 @@ var bLen = function() {
   try {
     return document.getElementById("B").innerHTML.length;
   } catch(e) {
-    return $("#B").val().length;
+    return 0;
   }
 };
 var cLen = function() {
   try {
     return document.getElementById("C").innerHTML.length;
   } catch(e) {
-    return $("#C").val().length;
+    return 0;
   }
 };
 var dLen = function() {
   try {
     return document.getElementById("D").innerHTML.length;
   } catch(e) {
-    return $("#D").val().length;
+    return 0;
   }
 };
 var eLen = function() {
   try {
     return document.getElementById("E").innerHTML.length;
   } catch(e) {
-    return $("#E").val().length;
+    return 0;
   }
 };
 var fLen = function() {
   try {
     return document.getElementById("F").innerHTML.length;
   } catch(e) {
-    return $("#F").val().length;
+    return 0;
   }
 };
 console.log(bLen());
@@ -373,7 +373,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     guessClass: ".sixth"
   }
 
-} else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 25) {
+} else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 25) {
   return {
     guess: "#E",
     nextG: "#F",
@@ -387,7 +387,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     guessClass: ".fifth"
   }
 
-} else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 20) {
+} else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 20) {
   return {
     guess: "#D",
     nextG: "#E",
@@ -400,7 +400,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     valButton: "#validateGuessD",
     guessClass: ".fourth"
   }
-} else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 15) {
+} else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 15) {
   return {
     guess: "#C",
     nextG: "#D",
@@ -413,7 +413,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     valButton: "#validateGuessC",
     guessClass: ".third"
   }
-} else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 10) {
+} else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 10) {
   return {
     guess: "#B",
     nextG: "#C",
@@ -426,7 +426,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     valButton: "#validateGuessB",
     guessClass: ".second"
   };
-} else if ((aLen + bLen + cLen + dLen + eLen + fLen) === 5) {
+} else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 5) {
   return {
     guess: "#A",
     nextG: "#B",
