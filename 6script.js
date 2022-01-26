@@ -358,11 +358,10 @@ var fLen = function() {
     return 0;
   }
 };
-console.log(bLen());
 if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
   return {
     guess: "#F",
-    nextG: false,
+    nextG: "X",
     lOne: "#F1",
     lTwo: "#F2",
     lThree: "#F3",
@@ -372,11 +371,10 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     valButton: "#validateGuessF",
     guessClass: ".sixth"
   }
-
 } else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 25) {
   return {
     guess: "#E",
-    nextG: "#F",
+    nextG: "F",
     lOne: "#E1",
     lTwo: "#E2",
     lThree: "#E3",
@@ -386,11 +384,10 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
     valButton: "#validateGuessE",
     guessClass: ".fifth"
   }
-
 } else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 20) {
   return {
     guess: "#D",
-    nextG: "#E",
+    nextG: "E",
     lOne: "#D1",
     lTwo: "#D2",
     lThree: "#D3",
@@ -403,7 +400,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
 } else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 15) {
   return {
     guess: "#C",
-    nextG: "#D",
+    nextG: "D",
     lOne: "#C1",
     lTwo: "#C2",
     lThree: "#C3",
@@ -416,7 +413,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
 } else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 10) {
   return {
     guess: "#B",
-    nextG: "#C",
+    nextG: "C",
     lOne: "#B1",
     lTwo: "#B2",
     lThree: "#B3",
@@ -429,7 +426,7 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
 } else if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 5) {
   return {
     guess: "#A",
-    nextG: "#B",
+    nextG: "B",
     lOne: "#A1",
     lTwo: "#A2",
     lThree: "#A3",
@@ -441,7 +438,6 @@ if ((aLen + bLen() + cLen() + dLen() + eLen() + fLen()) === 30) {
   };
  }
 }
-
 
 function validVars() {
   var guesses = validateHit();
@@ -573,7 +569,7 @@ function validateYellow(e) {
   }
   /* $("input"+guessVar.nextG).focus(); $(guessVar.nextG).focus(); */
   $(guessVar.guess).before('<input class="guess" id='+guessVar.nextG+' type="text" maxlength="5" autocomplete="off" spellcheck="false"/>');
-  $('#guess').focus();
+  $('.guess').focus();
 
   if (guessVar.lastGuess === true) {
     sorry();
