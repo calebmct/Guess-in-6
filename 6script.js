@@ -158,73 +158,73 @@ $("#A").keyup(function() {
   $("#A4").val(cuatro);
   $("#A5").val(cinco);
 });
+function findGuess() {
+  $("#B").keyup(function() {
+    let uno = $("#B").val().charAt(0).toUpperCase();
+    let dos = $("#B").val().charAt(1).toUpperCase();
+    let tres = $("#B").val().charAt(2).toUpperCase();
+    let cuatro = $("#B").val().charAt(3).toUpperCase();
+    let cinco = $("#B").val().charAt(4).toUpperCase();
+    $("#B1").val(uno);
+    $("#B2").val(dos);
+    $("#B3").val(tres);
+    $("#B4").val(cuatro);
+    $("#B5").val(cinco);
+  })
 
 
-$("#B").keyup(function() {
-  let uno = $("#B").val().charAt(0).toUpperCase();
-  let dos = $("#B").val().charAt(1).toUpperCase();
-  let tres = $("#B").val().charAt(2).toUpperCase();
-  let cuatro = $("#B").val().charAt(3).toUpperCase();
-  let cinco = $("#B").val().charAt(4).toUpperCase();
-  $("#B1").val(uno);
-  $("#B2").val(dos);
-  $("#B3").val(tres);
-  $("#B4").val(cuatro);
-  $("#B5").val(cinco);
-});
+  $("#C").keyup(function() {
+    let uno = $("#C").val().charAt(0).toUpperCase();
+    let dos = $("#C").val().charAt(1).toUpperCase();
+    let tres = $("#C").val().charAt(2).toUpperCase();
+    let cuatro = $("#C").val().charAt(3).toUpperCase();
+    let cinco = $("#C").val().charAt(4).toUpperCase();
+    $("#C1").val(uno);
+    $("#C2").val(dos);
+    $("#C3").val(tres);
+    $("#C4").val(cuatro);
+    $("#C5").val(cinco);
+  })
 
-$("#C").keyup(function() {
-  let uno = $("#C").val().charAt(0).toUpperCase();
-  let dos = $("#C").val().charAt(1).toUpperCase();
-  let tres = $("#C").val().charAt(2).toUpperCase();
-  let cuatro = $("#C").val().charAt(3).toUpperCase();
-  let cinco = $("#C").val().charAt(4).toUpperCase();
-  $("#C1").val(uno);
-  $("#C2").val(dos);
-  $("#C3").val(tres);
-  $("#C4").val(cuatro);
-  $("#C5").val(cinco);
-});
+  $("#D").keyup(function() {
+    let uno = $("#D").val().charAt(0).toUpperCase();
+    let dos = $("#D").val().charAt(1).toUpperCase();
+    let tres = $("#D").val().charAt(2).toUpperCase();
+    let cuatro = $("#D").val().charAt(3).toUpperCase();
+    let cinco = $("#D").val().charAt(4).toUpperCase();
+    $("#D1").val(uno);
+    $("#D2").val(dos);
+    $("#D3").val(tres);
+    $("#D4").val(cuatro);
+    $("#D5").val(cinco);
+  })
 
-$("#D").keyup(function() {
-  let uno = $("#D").val().charAt(0).toUpperCase();
-  let dos = $("#D").val().charAt(1).toUpperCase();
-  let tres = $("#D").val().charAt(2).toUpperCase();
-  let cuatro = $("#D").val().charAt(3).toUpperCase();
-  let cinco = $("#D").val().charAt(4).toUpperCase();
-  $("#D1").val(uno);
-  $("#D2").val(dos);
-  $("#D3").val(tres);
-  $("#D4").val(cuatro);
-  $("#D5").val(cinco);
-});
+  $("#E").keyup(function() {
+    let uno = $("#E").val().charAt(0).toUpperCase();
+    let dos = $("#E").val().charAt(1).toUpperCase();
+    let tres = $("#E").val().charAt(2).toUpperCase();
+    let cuatro = $("#E").val().charAt(3).toUpperCase();
+    let cinco = $("#E").val().charAt(4).toUpperCase();
+    $("#E1").val(uno);
+    $("#E2").val(dos);
+    $("#E3").val(tres);
+    $("#E4").val(cuatro);
+    $("#E5").val(cinco);
+  })
 
-$("#E").keyup(function() {
-  let uno = $("#E").val().charAt(0).toUpperCase();
-  let dos = $("#E").val().charAt(1).toUpperCase();
-  let tres = $("#E").val().charAt(2).toUpperCase();
-  let cuatro = $("#E").val().charAt(3).toUpperCase();
-  let cinco = $("#E").val().charAt(4).toUpperCase();
-  $("#E1").val(uno);
-  $("#E2").val(dos);
-  $("#E3").val(tres);
-  $("#E4").val(cuatro);
-  $("#E5").val(cinco);
-});
-
-$("#F").keyup(function() {
-  let uno = $("#F").val().charAt(0).toUpperCase();
-  let dos = $("#F").val().charAt(1).toUpperCase();
-  let tres = $("#F").val().charAt(2).toUpperCase();
-  let cuatro = $("#F").val().charAt(3).toUpperCase();
-  let cinco = $("#F").val().charAt(4).toUpperCase();
-  $("#F1").val(uno);
-  $("#F2").val(dos);
-  $("#F3").val(tres);
-  $("#F4").val(cuatro);
-  $("#F5").val(cinco);
-});
-
+  $("#F").keyup(function() {
+    let uno = $("#F").val().charAt(0).toUpperCase();
+    let dos = $("#F").val().charAt(1).toUpperCase();
+    let tres = $("#F").val().charAt(2).toUpperCase();
+    let cuatro = $("#F").val().charAt(3).toUpperCase();
+    let cinco = $("#F").val().charAt(4).toUpperCase();
+    $("#F1").val(uno);
+    $("#F2").val(dos);
+    $("#F3").val(tres);
+    $("#F4").val(cuatro);
+    $("#F5").val(cinco);
+  })
+};
 //Validation of 5 letters and if they're actual words when submitting answers
 
 $("#validateGuessA").click(function() {
@@ -570,7 +570,7 @@ function validateYellow(e) {
   /* $("input"+guessVar.nextG).focus(); $(guessVar.nextG).focus(); */
   $(guessVar.guess).before('<input class="guess" id='+guessVar.nextG+' type="text" maxlength="5" autocomplete="off" spellcheck="false"/>');
   $('.guess').focus();
-
+  findGuess();
   if (guessVar.lastGuess === true) {
     sorry();
   }
