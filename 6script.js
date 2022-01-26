@@ -323,12 +323,37 @@ if (event.keyCode === 8) {
 
 function validateHit() {
 var aLen = $("#A").val().length;
-var bLen = $("#B").val().length;
-var cLen = $("#C").val().length;
-var dLen = $("#D").val().length;
-var eLen = $("#E").val().length;
-var fLen = $("#F").val().length;
-
+var bLen = function() {try {
+  if (isNaN(document.getElementById("B").innerHTML)) throw 0;
+  } else {
+    return $("#B").val().length;
+  }
+};
+var cLen = function() {try {
+  if (isNaN(document.getElementById("C").innerHTML)) throw 0;
+  } else {
+    return $("#C").val().length;
+  }
+};
+var dLen = function() {try {
+  if (isNaN(document.getElementById("D").innerHTML)) throw 0;
+  } else {
+    return $("#D").val().length;
+  }
+};
+var bLen = function() {try {
+  if (isNaN(document.getElementById("E").innerHTML)) throw 0;
+  } else {
+    return $("#E").val().length;
+  }
+};
+var bLen = function() {try {
+  if (isNaN(document.getElementById("F").innerHTML)) throw 0;
+  } else {
+    return $("#F").val().length;
+  }
+};
+console.log(bLen);
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   return {
     guess: "#F",
