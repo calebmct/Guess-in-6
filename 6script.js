@@ -106,43 +106,46 @@ function newWord(){
   }, 100);
 }
 newWord();
+
 //"Enter" submits answer
 $("#A").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessA").click();
-}
+  if (event.keyCode === 13 && $(this).val().length == 5) {
+    event.preventDefault();
+    document.getElementById("validateGuessA").click();
+  }
 });
-$("#B").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessB").click();
-}
-});
-$("#C").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessC").click();
-}
-});
-$("#D").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessD").click();
-}
-});
-$("#E").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessE").click();
-}
-});
-$("#F").keyup(function(event) {
-if (event.keyCode === 13 && $(this).val().length == 5) {
-  event.preventDefault();
-  document.getElementById("validateGuessF").click();
-}
-});
+function keyupGuesses() {
+  $("#B").keyup(function(event) {
+    if (event.keyCode === 13 && $(this).val().length == 5) {
+      event.preventDefault();
+      document.getElementById("validateGuessB").click();
+    }
+  })
+  $("#C").keyup(function(event) {
+    if (event.keyCode === 13 && $(this).val().length == 5) {
+      event.preventDefault();
+      document.getElementById("validateGuessC").click();
+    }
+  })
+  $("#D").keyup(function(event) {
+    if (event.keyCode === 13 && $(this).val().length == 5) {
+      event.preventDefault();
+      document.getElementById("validateGuessD").click();
+    }
+  })
+  $("#E").keyup(function(event) {
+    if (event.keyCode === 13 && $(this).val().length == 5) {
+      event.preventDefault();
+      document.getElementById("validateGuessE").click();
+    }
+  })
+  $("#F").keyup(function(event) {
+    if (event.keyCode === 13 && $(this).val().length == 5) {
+      event.preventDefault();
+      document.getElementById("validateGuessF").click();
+    }
+  })
+};
 
 //Inputs typed letters into corresponding inputs displayed
 
@@ -571,6 +574,7 @@ function validateYellow(e) {
   $(guessVar.guess).before('<input class="guess" id='+guessVar.nextG+' type="text" maxlength="5" autocomplete="off" spellcheck="false"/>');
   $('.guess').focus();
   findGuess();
+  keyupGuesses();
   if (guessVar.lastGuess === true) {
     sorry();
   }
