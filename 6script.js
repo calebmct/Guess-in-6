@@ -325,39 +325,39 @@ function validateHit() {
 var aLen = $("#A").val().length;
 var bLen = function() {
   try {
-    document.getElementById("B").innerHTML.length;
-  } catch {
+    return document.getElementById("B").innerHTML.length;
+  } catch(e) {
     return $("#B").val().length;
   }
-}
+};
 var cLen = function() {
   try {
-    document.getElementById("C").innerHTML.length;
-  } catch {
+    return document.getElementById("C").innerHTML.length;
+  } catch(e) {
     return $("#C").val().length;
   }
-}
+};
 var dLen = function() {
   try {
-    document.getElementById("D").innerHTML.length;
-  } catch {
+    return document.getElementById("D").innerHTML.length;
+  } catch(e) {
     return $("#D").val().length;
   }
-}
+};
 var eLen = function() {
   try {
-    document.getElementById("E").innerHTML.length;
-  } catch {
+    return document.getElementById("E").innerHTML.length;
+  } catch(e) {
     return $("#E").val().length;
   }
-}
+};
 var fLen = function() {
   try {
-    document.getElementById("F").innerHTML.length;
-  } catch {
+    return document.getElementById("F").innerHTML.length;
+  } catch(e) {
     return $("#F").val().length;
   }
-}
+};
 console.log(bLen);
 if ((aLen + bLen + cLen + dLen + eLen + fLen) === 30) {
   return {
