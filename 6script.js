@@ -90,9 +90,10 @@ function newWord(){
   }, 100);
 }
 newWord();
+console.log($(".guess-inputs:not(:disabled):first"))
 
 //"Enter" submits answer 
-$(".guess-inputs:not(:disabled):first").keyup(function(event) {
+$(".guess-inputs:input:not(:disabled):first").keyup(function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
     $(".val-check:not(:disabled):first").click();
