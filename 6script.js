@@ -231,85 +231,119 @@ function findGuess() {
 //Validation of 5 letters and if they're actual words when submitting answers
 
 $("#validateGuessA").click(function() {
-if ($("#A").val().length != 5 && $("#A5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#A").val().toLowerCase()) && !ghhh.includes($("#A").val().toLowerCase())) {
-	notAWord();
-  return false;
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#A").val().length != 5 && $("#A5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#A").val().toLowerCase()) && !ghhh.includes($("#A").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      document.getElementById("validateGuessB").click();
+  }
 });
 
 $("#validateGuessB").click(function() {
-if ($("#B").val().length != 5 && $("#B5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
-  notAWord();
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#B").val().length != 5 && $("#B5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#B").val().toLowerCase()) && !ghhh.includes($("#B").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      document.getElementById("validateGuessC").click();
+  }
 });
+
 $("#validateGuessC").click(function() {
-if ($("#C").val().length != 5 && $("#C5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
-  notAWord();
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#C").val().length != 5 && $("#C5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#C").val().toLowerCase()) && !ghhh.includes($("#C").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      document.getElementById("validateGuessD").click();
+  }
 });
+
 $("#validateGuessD").click(function() {
-if ($("#D").val().length != 5 && $("#D5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#D").val().toLowerCase()) && !ghhh.includes($("#D").val().toLowerCase())) {
-  notAWord();
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#D").val().length != 5 && $("#D5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#D").val().toLowerCase()) && !ghhh.includes($("#D").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      document.getElementById("validateGuessE").click();
+  }
 });
+
 $("#validateGuessE").click(function() {
-if ($("#E").val().length != 5 && $("#E5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
-  notAWord();
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#E").val().length != 5 && $("#E5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#E").val().toLowerCase()) && !ghhh.includes($("#E").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      document.getElementById("validateGuessF").click();
+  }
 });
+
 $("#validateGuessF").click(function() {
-if ($("#F").val().length != 5 && $("#F5").val().length == 1 ) {
-  return false;
-} else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
-  notAWord();
-} else {
-	setTimeout(function(){
-    document.getElementById("overlayA").style.display = "none";
-    validateHit();
-    validateGuess()
-  },100);
-}
+  try {
+    if ($("#F").val().length != 5 && $("#F5").val().length == 1 ) {
+      return false;
+    } else if (!shhh.includes($("#F").val().toLowerCase()) && !ghhh.includes($("#F").val().toLowerCase())) {
+      notAWord();
+      return false;
+    } else {
+      setTimeout(function(){
+        document.getElementById("overlayA").style.display = "none";
+        validateHit();
+        validateGuess()
+      },100);
+    }
+  } catch(e) {
+      return false;
+  }
 });
+
 //pops up "not a word" warning when guess doesn't match arrays
 function notAWord() {
   document.getElementById("overlayA").style.display = "block";

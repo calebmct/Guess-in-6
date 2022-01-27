@@ -32,11 +32,11 @@ body, input {
   z-index: 10;
 }
 #game-td {
-  background-color: gray;
+  background-color: white;
   text-align: center;
   width: 100%;
 }
-#secretword, #title {
+#title {
   text-align: center;
   margin-top: 0px;
 }
@@ -47,9 +47,6 @@ body, input {
   letter-spacing: 0.02em;
   color: var(--title);
   margin: 1.5rem 0 5rem 0;
-}
-#secretword {
-  display: none;
 }
 .guesses {
   text-align: center;
