@@ -91,8 +91,8 @@ function newWord(){
 }
 newWord();
 
-//"Enter" submits answer
-$(".guess").keyup(function(event) {
+//"Enter" submits answer 
+$(".guess-inputs:not(:disabled):first").keyup(function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
     $(".val-check:not(:disabled):first").click();
