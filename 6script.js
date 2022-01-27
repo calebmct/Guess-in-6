@@ -590,7 +590,6 @@ function validateYellow(e) {
   $(guessVar.guess).before('<input class="guess" id='+guessVar.nextG+' type="text" maxlength="5" autocomplete="off" spellcheck="false"/>');
   $('.guess').focus();
   findGuess();
-  keyupGuesses();
   if (guessVar.lastGuess === true) {
     sorry();
   }
