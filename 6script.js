@@ -111,7 +111,7 @@ newWord();
 $(".guess").keyup(function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
-    document.getElementsByClassName("val-check")[1].click();
+    document.getElementsByClassName("val-check")[0].click();
   }
 });
 function keyupGuesses() {
