@@ -97,6 +97,7 @@ $(".guess-inputs:input:not(:disabled):first").keyup(function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
     $(".val-check:not(:disabled):first").click();
+    console.log("success at hitting enter");
   }
 });
 /*
