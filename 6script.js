@@ -90,7 +90,7 @@ function newWord(){
   }, 100);
 }
 newWord();
-console.log($(".guess-inputs:not(:disabled):first"))
+console.log($(".guess-inputs :input:not(:disabled):first"));
 
 //"Enter" submits answer 
 $(".guess-inputs:input:not(:disabled):first").keyup(function(event) {
