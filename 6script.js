@@ -74,15 +74,6 @@ if ($(this).val().match(regexp)) {
 // GLOBAL VARS
 
 var sw;
-var guess;
-var lOne;
-var lTwo;
-var lThree;
-var lFour;
-var lFive;
-var lastGuess;
-var valButton;
-var nextGuess;
 var AAA;
 var AAB;
 var AAC;
@@ -92,13 +83,6 @@ var ABE;
 var ACE;
 var ADE;
 var AEE;
-var AFE;
-var swVal1;
-var swVal2;
-var swVal3;
-var swVal4;
-var swVal5;
-var guessClass;
 
 function newWord(){
   window.setTimeout(function() { 
@@ -111,9 +95,10 @@ newWord();
 $(".guess").keyup(function(event) {
   if (event.keyCode === 13 && $(this).val().length == 5) {
     event.preventDefault();
-    document.getElementsByClassName("val-check")[0].click();
+    $(".val-check:not(:disabled):first").click();
   }
 });
+/*
 function keyupGuesses() {
   $("#B").keyup(function(event) {
     if (event.keyCode === 13 && $(this).val().length == 5) {
@@ -146,7 +131,7 @@ function keyupGuesses() {
     }
   })
 };
-
+*/
 //Inputs typed letters into corresponding inputs displayed
 
 $("#A").keyup(function() {
@@ -161,6 +146,7 @@ $("#A").keyup(function() {
   $("#A4").val(cuatro);
   $("#A5").val(cinco);
 });
+
 function findGuess() {
   $("#B").keyup(function() {
     let uno = $("#B").val().charAt(0).toUpperCase();
@@ -174,8 +160,6 @@ function findGuess() {
     $("#B4").val(cuatro);
     $("#B5").val(cinco);
   })
-
-
   $("#C").keyup(function() {
     let uno = $("#C").val().charAt(0).toUpperCase();
     let dos = $("#C").val().charAt(1).toUpperCase();
@@ -188,7 +172,6 @@ function findGuess() {
     $("#C4").val(cuatro);
     $("#C5").val(cinco);
   })
-
   $("#D").keyup(function() {
     let uno = $("#D").val().charAt(0).toUpperCase();
     let dos = $("#D").val().charAt(1).toUpperCase();
@@ -201,7 +184,6 @@ function findGuess() {
     $("#D4").val(cuatro);
     $("#D5").val(cinco);
   })
-
   $("#E").keyup(function() {
     let uno = $("#E").val().charAt(0).toUpperCase();
     let dos = $("#E").val().charAt(1).toUpperCase();
@@ -214,7 +196,6 @@ function findGuess() {
     $("#E4").val(cuatro);
     $("#E5").val(cinco);
   })
-
   $("#F").keyup(function() {
     let uno = $("#F").val().charAt(0).toUpperCase();
     let dos = $("#F").val().charAt(1).toUpperCase();
@@ -228,6 +209,7 @@ function findGuess() {
     $("#F5").val(cinco);
   })
 };
+
 //Validation of 5 letters and if they're actual words when submitting answers
 
 $("#validateGuessA").click(function() {
